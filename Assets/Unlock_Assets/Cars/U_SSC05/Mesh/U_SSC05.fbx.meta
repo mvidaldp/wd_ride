@@ -1,0 +1,386 @@
+fileFormatVersion: 2
+guid: 1e8f5f1ef1e763746855c06d62badfad
+timeCreated: 1515689053
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: CarBody
+    100002: Ilum
+    100004: SteeringWheel
+    100006: U_SS05_Chrome
+    100008: U_SS05_chrome
+    100010: U_SS05_exteriorTransp
+    100012: U_SS05_Grille
+    100014: U_SS05_interior_Hi
+    100016: U_SS05_SW_Chrome
+    100018: U_SS05_Windows
+    100020: //RootNode
+    100022: U_SSC05_Black
+    100024: U_SSC05_black_BV
+    100026: U_SSC05_BrakeLight
+    100028: U_SSC05_caliper
+    100030: U_SSC05_caliper 1
+    100032: U_SSC05_caliper 2
+    100034: U_SSC05_caliper 3
+    100036: U_SSC05_carbonFiber
+    100038: U_SSC05_carbonFiber 1
+    100040: U_SSC05_CarBotton
+    100042: U_SSC05_CarPaint
+    100044: U_SSC05_DoorsDetails
+    100046: U_SSC05_Engine
+    100048: U_SSC05_fGrille
+    100050: U_SSC05_frntoLights
+    100052: U_SSC05_interiorDetails
+    100054: U_SSC05_interiorDetails1
+    100056: U_SSC05_InteriorLow
+    100058: U_SSC05_InteriorRearView
+    100060: U_SSC05_InteriorTranspIcons
+    100062: U_SSC05_Leather
+    100064: U_SSC05_lightDetails
+    100066: U_SSC05_lightGlass
+    100068: U_SSC05_lights
+    100070: U_SSC05_plasticPanel
+    100072: U_SSC05_reverseLight
+    100074: U_SSC05_Seam
+    100076: U_SSC05_SeatLeather
+    100078: U_SSC05_SW_interiorDetails
+    100080: U_SSC05_SW_interiorDetails1
+    100082: U_SSC05_SW_InteriorTranspIcons
+    100084: U_SSC05_SW_Leather
+    100086: U_SSC05_SW_leather
+    100088: U_SSC05_SW_plasticPanel
+    100090: U_SSC05_SW_Seam
+    100092: U_SSC05_wheel
+    100094: U_SSC05_wheel 1
+    100096: U_SSC05_wheel 2
+    100098: U_SSC05_wheel 3
+    100100: U_SSC05_wheel_details
+    100102: U_SSC05_wheel_details 1
+    100104: U_SSC05_wheel_details 2
+    100106: U_SSC05_wheel_details 3
+    100108: U_SSC05_wheels
+    100110: U_SSC_black
+    100112: U_SSC_RPM_Needle
+    100114: U_SSC_seatBelt
+    100116: Wheel_FL
+    100118: Wheel_FR
+    100120: Wheel_RL
+    100122: Wheel_RR
+    400000: CarBody
+    400002: Ilum
+    400004: SteeringWheel
+    400006: U_SS05_Chrome
+    400008: U_SS05_chrome
+    400010: U_SS05_exteriorTransp
+    400012: U_SS05_Grille
+    400014: U_SS05_interior_Hi
+    400016: U_SS05_SW_Chrome
+    400018: U_SS05_Windows
+    400020: //RootNode
+    400022: U_SSC05_Black
+    400024: U_SSC05_black_BV
+    400026: U_SSC05_BrakeLight
+    400028: U_SSC05_caliper
+    400030: U_SSC05_caliper 1
+    400032: U_SSC05_caliper 2
+    400034: U_SSC05_caliper 3
+    400036: U_SSC05_carbonFiber
+    400038: U_SSC05_carbonFiber 1
+    400040: U_SSC05_CarBotton
+    400042: U_SSC05_CarPaint
+    400044: U_SSC05_DoorsDetails
+    400046: U_SSC05_Engine
+    400048: U_SSC05_fGrille
+    400050: U_SSC05_frntoLights
+    400052: U_SSC05_interiorDetails
+    400054: U_SSC05_interiorDetails1
+    400056: U_SSC05_InteriorLow
+    400058: U_SSC05_InteriorRearView
+    400060: U_SSC05_InteriorTranspIcons
+    400062: U_SSC05_Leather
+    400064: U_SSC05_lightDetails
+    400066: U_SSC05_lightGlass
+    400068: U_SSC05_lights
+    400070: U_SSC05_plasticPanel
+    400072: U_SSC05_reverseLight
+    400074: U_SSC05_Seam
+    400076: U_SSC05_SeatLeather
+    400078: U_SSC05_SW_interiorDetails
+    400080: U_SSC05_SW_interiorDetails1
+    400082: U_SSC05_SW_InteriorTranspIcons
+    400084: U_SSC05_SW_Leather
+    400086: U_SSC05_SW_leather
+    400088: U_SSC05_SW_plasticPanel
+    400090: U_SSC05_SW_Seam
+    400092: U_SSC05_wheel
+    400094: U_SSC05_wheel 1
+    400096: U_SSC05_wheel 2
+    400098: U_SSC05_wheel 3
+    400100: U_SSC05_wheel_details
+    400102: U_SSC05_wheel_details 1
+    400104: U_SSC05_wheel_details 2
+    400106: U_SSC05_wheel_details 3
+    400108: U_SSC05_wheels
+    400110: U_SSC_black
+    400112: U_SSC_RPM_Needle
+    400114: U_SSC_seatBelt
+    400116: Wheel_FL
+    400118: Wheel_FR
+    400120: Wheel_RL
+    400122: Wheel_RR
+    2100000: U_SSC05_carbonFiber_shdr
+    2100002: U_SSC05_carDetails_shdr
+    2100004: U_SSC05_interiorLow_shdr
+    2100006: U_SS05_chrome_shdr
+    2100008: U_SSC05_black_shdr
+    2100010: U_SSC05_InteriorTranspIcons_shdr
+    2100012: U_SS05_Windows_shdr
+    2100014: U_SSC05_lightGlass_shdr
+    2100016: U_SSC05_lights_shdr
+    2100018: U_SSC05_CarPaint_shdr
+    2100020: U_SSC05_interiorDetails_shdr
+    2100022: U_SSC05_Leather_shdr
+    2100024: U_SSC05_black_BV_shdr
+    2100026: U_SSC05_aluminium_shdr
+    2100028: Default_Material
+    2100030: U_SSC05_plasticPanel_shdr
+    2100032: U_SSC05_Seam_shdr
+    2100034: U_SSC05_steeringWheel_leather_shdr
+    2100036: U_SSC05_wheels_Details_shdr
+    2100038: U_SSC05_wheel_shdr
+    2100040: U_SSC05_lights_On_shdr
+    2300000: U_SS05_Chrome
+    2300002: U_SS05_chrome
+    2300004: U_SS05_exteriorTransp
+    2300006: U_SS05_Grille
+    2300008: U_SS05_SW_Chrome
+    2300010: U_SS05_Windows
+    2300012: U_SSC05_Black
+    2300014: U_SSC05_black_BV
+    2300016: U_SSC05_BrakeLight
+    2300018: U_SSC05_caliper
+    2300020: U_SSC05_caliper 1
+    2300022: U_SSC05_caliper 2
+    2300024: U_SSC05_caliper 3
+    2300026: U_SSC05_carbonFiber
+    2300028: U_SSC05_carbonFiber 1
+    2300030: U_SSC05_CarBotton
+    2300032: U_SSC05_CarPaint
+    2300034: U_SSC05_DoorsDetails
+    2300036: U_SSC05_Engine
+    2300038: U_SSC05_fGrille
+    2300040: U_SSC05_frntoLights
+    2300042: U_SSC05_interiorDetails
+    2300044: U_SSC05_interiorDetails1
+    2300046: U_SSC05_InteriorLow
+    2300048: U_SSC05_InteriorRearView
+    2300050: U_SSC05_InteriorTranspIcons
+    2300052: U_SSC05_Leather
+    2300054: U_SSC05_lightDetails
+    2300056: U_SSC05_lightGlass
+    2300058: U_SSC05_lights
+    2300060: U_SSC05_plasticPanel
+    2300062: U_SSC05_reverseLight
+    2300064: U_SSC05_Seam
+    2300066: U_SSC05_SeatLeather
+    2300068: U_SSC05_SW_interiorDetails
+    2300070: U_SSC05_SW_interiorDetails1
+    2300072: U_SSC05_SW_InteriorTranspIcons
+    2300074: U_SSC05_SW_Leather
+    2300076: U_SSC05_SW_leather
+    2300078: U_SSC05_SW_plasticPanel
+    2300080: U_SSC05_SW_Seam
+    2300082: U_SSC05_wheel
+    2300084: U_SSC05_wheel 1
+    2300086: U_SSC05_wheel 2
+    2300088: U_SSC05_wheel 3
+    2300090: U_SSC05_wheel_details
+    2300092: U_SSC05_wheel_details 1
+    2300094: U_SSC05_wheel_details 2
+    2300096: U_SSC05_wheel_details 3
+    2300098: U_SSC_black
+    2300100: U_SSC_RPM_Needle
+    2300102: U_SSC_seatBelt
+    3300000: U_SS05_Chrome
+    3300002: U_SS05_chrome
+    3300004: U_SS05_exteriorTransp
+    3300006: U_SS05_Grille
+    3300008: U_SS05_SW_Chrome
+    3300010: U_SS05_Windows
+    3300012: U_SSC05_Black
+    3300014: U_SSC05_black_BV
+    3300016: U_SSC05_BrakeLight
+    3300018: U_SSC05_caliper
+    3300020: U_SSC05_caliper 1
+    3300022: U_SSC05_caliper 2
+    3300024: U_SSC05_caliper 3
+    3300026: U_SSC05_carbonFiber
+    3300028: U_SSC05_carbonFiber 1
+    3300030: U_SSC05_CarBotton
+    3300032: U_SSC05_CarPaint
+    3300034: U_SSC05_DoorsDetails
+    3300036: U_SSC05_Engine
+    3300038: U_SSC05_fGrille
+    3300040: U_SSC05_frntoLights
+    3300042: U_SSC05_interiorDetails
+    3300044: U_SSC05_interiorDetails1
+    3300046: U_SSC05_InteriorLow
+    3300048: U_SSC05_InteriorRearView
+    3300050: U_SSC05_InteriorTranspIcons
+    3300052: U_SSC05_Leather
+    3300054: U_SSC05_lightDetails
+    3300056: U_SSC05_lightGlass
+    3300058: U_SSC05_lights
+    3300060: U_SSC05_plasticPanel
+    3300062: U_SSC05_reverseLight
+    3300064: U_SSC05_Seam
+    3300066: U_SSC05_SeatLeather
+    3300068: U_SSC05_SW_interiorDetails
+    3300070: U_SSC05_SW_interiorDetails1
+    3300072: U_SSC05_SW_InteriorTranspIcons
+    3300074: U_SSC05_SW_Leather
+    3300076: U_SSC05_SW_leather
+    3300078: U_SSC05_SW_plasticPanel
+    3300080: U_SSC05_SW_Seam
+    3300082: U_SSC05_wheel
+    3300084: U_SSC05_wheel 1
+    3300086: U_SSC05_wheel 2
+    3300088: U_SSC05_wheel 3
+    3300090: U_SSC05_wheel_details
+    3300092: U_SSC05_wheel_details 1
+    3300094: U_SSC05_wheel_details 2
+    3300096: U_SSC05_wheel_details 3
+    3300098: U_SSC_black
+    3300100: U_SSC_RPM_Needle
+    3300102: U_SSC_seatBelt
+    4300000: U_SSC05_carbonFiber
+    4300002: U_SSC05_fGrille
+    4300004: U_SS05_Grille
+    4300006: U_SSC05_CarBotton
+    4300008: U_SSC05_InteriorLow
+    4300010: U_SS05_chrome
+    4300012: U_SSC05_Black
+    4300014: U_SS05_exteriorTransp
+    4300016: U_SSC05_Engine
+    4300018: U_SS05_Windows
+    4300020: U_SSC05_lightGlass
+    4300022: U_SSC05_lightDetails
+    4300024: U_SSC05_lights
+    4300026: U_SSC05_CarPaint
+    4300028: U_SSC05_interiorDetails
+    4300030: U_SSC05_DoorsDetails
+    4300032: U_SSC05_carbonFiber
+    4300034: U_SSC_black
+    4300036: U_SSC05_SeatLeather
+    4300038: U_SSC05_black_BV
+    4300040: U_SS05_Chrome
+    4300042: U_SSC05_InteriorTranspIcons
+    4300044: U_SSC05_InteriorRearView
+    4300046: U_SSC05_Leather
+    4300048: U_SSC05_plasticPanel
+    4300050: U_SSC05_Seam
+    4300052: U_SSC05_interiorDetails1
+    4300054: U_SSC_RPM_Needle
+    4300056: U_SSC_seatBelt
+    4300058: U_SSC05_SW_Leather
+    4300060: U_SSC05_SW_Seam
+    4300062: U_SS05_SW_Chrome
+    4300064: U_SSC05_SW_leather
+    4300066: U_SSC05_SW_interiorDetails
+    4300068: U_SSC05_SW_interiorDetails1
+    4300070: U_SSC05_SW_plasticPanel
+    4300072: U_SSC05_SW_InteriorTranspIcons
+    4300074: U_SSC05_wheel_details
+    4300076: U_SSC05_caliper
+    4300078: U_SSC05_wheel
+    4300080: U_SSC05_wheel_details
+    4300082: U_SSC05_caliper
+    4300084: U_SSC05_wheel
+    4300086: U_SSC05_wheel_details
+    4300088: U_SSC05_caliper
+    4300090: U_SSC05_wheel
+    4300092: U_SSC05_wheel_details
+    4300094: U_SSC05_caliper
+    4300096: U_SSC05_wheel
+    4300098: U_SSC05_BrakeLight
+    4300100: U_SSC05_frntoLights
+    4300102: U_SSC05_reverseLight
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 4.426
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

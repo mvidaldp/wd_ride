@@ -1,0 +1,62 @@
+﻿[language]
+code = DE
+[server]
+useFallBack = false
+main = http://192.168.1.3:3000
+fallback = http://192.168.1.4:3000
+queryString = /check?id={0}&uid={1}
+[smoothing]
+interpolate = false
+[batchMode]
+endBehaviour = goToLobby
+[engine]
+mode = simulate
+[delays]
+recordDelay = 1
+taxiDriverDelay = 0.5
+consentAudio = 1.5
+[dataServer]
+serverUrl = https://gitlab.com/farbod69/project-westdrive/raw/master/Assets/Resources/SimulationData/
+[input]
+simulationData = /Resources/SimulationData/
+[events]
+startFrame = 0
+endFrame = 100
+[output]
+subPath = /Resources/ExperimentData/
+events = /Resources/EventData/
+csv = /Resources/CsvData/
+hit = /Resources/HitData/
+combined = /Resources/CombinedHitData/
+screenshots = /Resources/Screenshots/
+[extensions]
+binary = .bin
+trackingData = .raw
+hitData = .hit
+image = .jpg
+[germanTexts]
+consentText = Hallo! Das hier ist ein Experiment, deshalb möchten wir Daten speichern. Die von uns benötigten Daten sind deine Kopfbewegung während der Fahrt und die Antworten in dem anschließenden Fragebogen. Wenn du das nicht möchtest, solltest du die VR Brille jetzt wieder abnehmen.
+welcomeText = Herzlich willkommen bei Westdrive. Bitte warte bis die Simulation vollständig geladen ist.
+dataSavingText = Bitte warten. Daten werden gespeichert.
+dataLoadingText = Bitten warten. Daten werden geladen.
+endBlockText = Du hast das Ende vom Block erreicht. \nBitte nimm das Headset ab. 
+serverErrorText = Du hast das Ende der Simulation erreichet. Es gab Probleme mit der Umfrage - Bitte nimm das Headset ab. 
+endExperimentText = Du hast das Ende der Simulation erreichet. Bitte nimm das Headset ab.
+endExperimentWithCodeText = Du hast das Ende der Simulation erreichet. Bitte nimm das Headset ab - aber merke dir deinen Code für den Fragebogen. Dein Code ist <{0}>.
+experimentLoadingText = Bitte warte. Die Simulation lädt.
+experimentLoadingPercentageText = Bitte warte. Die Simulation lädt. loading {0}% completed.
+transferText = Gleich geht es los...
+dataDownloadingText = {0} wird runtergeladet. {1}% completed.
+[englishTexts]
+consentText = Hey there, this will be there soon
+welcomeText = Welcome to the WestDrive. \n Please wait until simulation loads completely.
+dataSavingText = Please Wait while data being save.
+dataLoadingText = Please Wait while data being loaded.
+endBlockText = You have reached the end of the block, \nPlease Take off the headset.
+serverErrorText = You have reached the end of the simulation. Can not registser you on questionaire - Please take of the headset to continue.
+endExperimentText = You have reached the end of the simulation. Please take of the headset to continue.
+endExperimentWithCodeText = You have reached the end of the simulation.Please take of the headset to continue\n Your unique code is <{0}> \nPlease remember this code before you leave.
+experimentLoadingText = Please wait while the simulation is loading.
+experimentLoadingPercentageText = \n Please wait while the simulation is loading\nloading {0}% completed
+transferText = You will be transfered to the car shortly...
+dataDownloadingText = {0} being downloaded. {1}% completed. 

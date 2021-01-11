@@ -1,0 +1,6778 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d41887b1546f5c44ab54e7e65aad3bc, type: 3}
+  m_Name: Static NPCs
+  m_EditorClassIdentifier: 
+  version: 3252
+  materialsAndUVRects:
+  - material: {fileID: 2100000, guid: 2416b4481b4145b4cb1c01bc94782591, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.43579102
+      y: 0.5637207
+      width: 0.061767578
+      height: 0.04711914
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008698
+      y: 0.005515
+      width: 0.985858
+      height: 0.98043454
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: edbef517984edc54681f05ed2e604d4c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.37402344
+      y: 0.096191406
+      width: 0.12426758
+      height: 0.095214844
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.012473
+      width: 0.98748004
+      height: 0.985825
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 85bc0bc613c67ef4eb81b833ba3c6758, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.67993164
+      y: 0.9416504
+      width: 0.060546875
+      height: 0.046142578
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.022065
+      y: 0.0197
+      width: 0.966173
+      height: 0.962795
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ca68b93e6e77d0541989344980d318ff, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.1875
+      y: 0.7512207
+      width: 0.060791016
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.012787
+      y: 0.008648
+      width: 0.971488
+      height: 0.982588
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: fabe48697dc25394db62402c2bf36b50, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4970703
+      y: 0.6113281
+      width: 0.061279297
+      height: 0.046875
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.012511
+      y: 0.008917
+      width: 0.97591096
+      height: 0.978239
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 6ca4205186d4ddb43ba986c3120d5863, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.43579102
+      y: 0.4194336
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.007629
+      y: 0.004803
+      width: 0.98974603
+      height: 0.990137
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: bddf513f106154545b6afa8843f41838, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.80444336
+      y: 0.70581055
+      width: 0.061035156
+      height: 0.04663086
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.014248
+      y: 0.013123
+      width: 0.971318
+      height: 0.96677005
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 7bdd1ee012d5e5e488ec4222bb22fdac, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8015137
+      y: 0.7529297
+      width: 0.061279297
+      height: 0.045898438
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0148
+      y: 0.0299
+      width: 0.9783
+      height: 0.95739996
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ac6e2ac6b9752a746af0fddc519aa1ab, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.68481445
+      width: 0.06225586
+      height: 0.047851562
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.004064
+      y: 0.000617
+      width: 0.992727
+      height: 0.99848396
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: cc36f6cb4e5932047aa52b9dbe24145d, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.935791
+      y: 0.4194336
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.003358
+      y: 0.004475
+      width: 0.988515
+      height: 0.988077
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 97fb7aa2548aeec4d9c26a0f0e05936b, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.9748535
+      width: 0.021972656
+      height: 0.008300781
+    srcObjName: Beards
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.636234
+      y: 0.192319
+      width: 0.35378098
+      height: 0.178951
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 83261a97a36e8d04e909547a7c02451d, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.3713379
+      width: 0.1237793
+      height: 0.0715332
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00678
+      y: 0.257544
+      width: 0.98569
+      height: 0.740754
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 428e995d701a7ed4b9672777843f1b62, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.55737305
+      y: 0.6586914
+      width: 0.061279297
+      height: 0.04663086
+    srcObjName: Hats
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0153
+      y: 0.0091
+      width: 0.9774
+      height: 0.9697
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: b36bc7c8972d6624992f3081c7ce0a5e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.748291
+      y: 0.4194336
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.003358
+      y: 0.004475
+      width: 0.988515
+      height: 0.988077
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 72881239521dc4a469421a3a780656b2, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.81152344
+      y: 0.46801758
+      width: 0.06225586
+      height: 0.04711914
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00371
+      y: 0.009773
+      width: 0.993399
+      height: 0.98280597
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ca00f14df49f6704584e202c8e11e050, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.810791
+      y: 0.4194336
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.003358
+      y: 0.004475
+      width: 0.988515
+      height: 0.988077
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 309295651a032e942965f99280621311, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8659668
+      y: 0.70581055
+      width: 0.061035156
+      height: 0.04638672
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.022065
+      y: 0.0197
+      width: 0.974046
+      height: 0.962795
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: cea627ac1b6844e44b29557a5bafa8f6, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24926758
+      y: 0.6125488
+      width: 0.061523438
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.012607
+      y: 0.003995
+      width: 0.98408604
+      height: 0.988353
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: bbff185cdef0e5d4b89fcc015d62a0d1, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3112793
+      y: 0.46801758
+      width: 0.06201172
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.003358
+      y: 0.004475
+      width: 0.988515
+      height: 0.988077
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 771bad975eb56a54d84ed40e05e6e806, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24926758
+      y: 0.9001465
+      width: 0.061523438
+      height: 0.04711914
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0115
+      y: 0.013
+      width: 0.9835
+      height: 0.9808
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 4f307fe52fcf0694da7bde618a798969, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8125
+      y: 0.37109375
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.007629
+      y: 0.004803
+      width: 0.98974603
+      height: 0.990137
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 7605ce9367e03b84c9ec6368a008be02, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3112793
+      y: 0.85131836
+      width: 0.061767578
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0097
+      y: 0.00813
+      width: 0.98502
+      height: 0.98512
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 77c596d5a0f36944ea9ea775ef27e0f0, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4987793
+      y: 0.51586914
+      width: 0.06225586
+      height: 0.04736328
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00371
+      y: 0.009773
+      width: 0.9902455
+      height: 0.98280597
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 4ef0b690d3d82e14fb8ebc3d8e1367d5, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12451172
+      y: 0.43579102
+      width: 0.12426758
+      height: 0.063964844
+    srcObjName: Eyes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.335923
+      width: 0.98748004
+      height: 0.662375
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 65d384ba06382144c8f9b5ab03436e80, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.86328125
+      y: 0.890625
+      width: 0.043945312
+      height: 0.048095703
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.255138
+      y: 0.003523
+      width: 0.703501
+      height: 0.996303
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 288dfc520f2c79b4f98e832b05a3c419, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.67993164
+      y: 0.8942871
+      width: 0.060058594
+      height: 0.046875
+    srcObjName: Hats
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.029423
+      y: 0.010342
+      width: 0.95749
+      height: 0.9729785
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 2ea442a9d2864114e9abfee4e839ff80, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8742676
+      y: 0.46801758
+      width: 0.06225586
+      height: 0.04711914
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00371
+      y: 0.009773
+      width: 0.993399
+      height: 0.98280597
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: b757bc57e7bf2fe4ab5bb8fe19f5ef5b, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4970703
+      y: 0.8034668
+      width: 0.057861328
+      height: 0.047851562
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.064669
+      y: 0.001569
+      width: 0.920745
+      height: 0.99798
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 9435fb5823bf78140a77293033d419ec, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.7102051
+      y: 0.18579102
+      width: 0.020507812
+      height: 0.0056152344
+    srcObjName: Moustaches
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.649796
+      y: 0.213009
+      width: 0.329628
+      height: 0.12412
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ddf8bf0c6a791c84594b1f6830990d35, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.9370117
+      y: 0.46801758
+      width: 0.06201172
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.005295
+      y: 0.006233
+      width: 0.988105
+      height: 0.987181
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 201185d724bb2834eaa30822751d4446, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.5620117
+      y: 0.37109375
+      width: 0.06225586
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.004929
+      y: 0.005314
+      width: 0.99169797
+      height: 0.991241
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 6a068187d1649e246b77ed7f29ce2ee2, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3737793
+      y: 0.7077637
+      width: 0.061523438
+      height: 0.046875
+    srcObjName: Eyewear
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.010291
+      y: 0.012804
+      width: 0.981203
+      height: 0.975741
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 1e1e0ef4b60cf134c8fe31a5df494193, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.90771484
+      y: 0.890625
+      width: 0.043945312
+      height: 0.048095703
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.255138
+      y: 0.003523
+      width: 0.703501
+      height: 0.996303
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 90001ab591b176946beda24247feac78, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.5588379
+      y: 0.6113281
+      width: 0.061035156
+      height: 0.046875
+    srcObjName: Hats
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0138
+      y: 0.01559
+      width: 0.97410995
+      height: 0.97622
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 0d2f61ce623fb634b9c04ee8e70dceb5, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.43579102
+      y: 0.80249023
+      width: 0.060791016
+      height: 0.04711914
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.012787
+      y: 0.008648
+      width: 0.97186
+      height: 0.982588
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: c3861fdb1d3c2b84e929deb0bc80240d, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.7487793
+      y: 0.46801758
+      width: 0.06225586
+      height: 0.04711914
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00371
+      y: 0.009773
+      width: 0.993399
+      height: 0.98280597
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: bc09a646cdf3f3c49b543f6744b7691e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.87231445
+      y: 0.096191406
+      width: 0.12426758
+      height: 0.08911133
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.073864
+      width: 0.98748004
+      height: 0.924434
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 20b298b384d2b5e40a95a2996ffa034b, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4970703
+      y: 0.9470215
+      width: 0.059814453
+      height: 0.046142578
+    srcObjName: Eyewear
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.03201
+      y: 0.011735
+      width: 0.952365
+      height: 0.96182495
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 6a1831974ef75f54ba4295c579a88cf2, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3737793
+      y: 0.4194336
+      width: 0.061523438
+      height: 0.048095703
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.004903
+      y: 0.000837
+      width: 0.982746
+      height: 0.997939
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 30c339549be1b1342a0b054fe6a24fe9, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.9289551
+      y: 0.6113281
+      width: 0.061279297
+      height: 0.04663086
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.010913
+      y: 0.01917
+      width: 0.97906697
+      height: 0.969679
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: bbc0af754fa80544e8ca9f25c93e865a, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.62475586
+      y: 0.37109375
+      width: 0.06225586
+      height: 0.047607422
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.002597
+      y: 0.009992
+      width: 0.99495304
+      height: 0.987599
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: b5a001869a6ede247860d4c2313c1f4e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.022705078
+      y: 0.9748535
+      width: 0.021972656
+      height: 0.007080078
+    srcObjName: Beards
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.636234
+      y: 0.192319
+      width: 0.35378098
+      height: 0.157751
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: b3057720066bfa34fb3e918a15704115, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.86328125
+      y: 0.7529297
+      width: 0.061279297
+      height: 0.045898438
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0148
+      y: 0.0299
+      width: 0.9783
+      height: 0.95739996
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 67e62d8be45960e4190ccee1b83530ed, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.623291
+      y: 0.00024414062
+      width: 0.12426758
+      height: 0.095458984
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.008318
+      width: 0.98748004
+      height: 0.98998
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: dc7c3471ff371624c8de2190d4e30391, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8017578
+      y: 0.9328613
+      width: 0.044189453
+      height: 0.048095703
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.255138
+      y: 0.003523
+      width: 0.703501
+      height: 0.996303
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 34e5fecac70857f4f88d3a70989df7c2, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.67993164
+      y: 0.8469238
+      width: 0.060058594
+      height: 0.046875
+    srcObjName: Hats
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.029423
+      y: 0.010342
+      width: 0.95749
+      height: 0.974724
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 055d6982618b410478b63402b838fbe5, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6447754
+      y: 0.18579102
+      width: 0.021484375
+      height: 0.005859375
+    srcObjName: Moustaches
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.647589
+      y: 0.2117205
+      width: 0.34215796
+      height: 0.1254085
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 0b563ef150bd3264fa3080ff7b9b5ebb, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.86694336
+      y: 0.6113281
+      width: 0.061523438
+      height: 0.04663086
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.010913
+      y: 0.01917
+      width: 0.97906697
+      height: 0.969679
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: c55f3a1e2ccfd9c41b06a7c9d5c13cec, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.55737305
+      y: 0.8474121
+      width: 0.061035156
+      height: 0.04663086
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0145
+      y: 0.0173
+      width: 0.9737
+      height: 0.9706
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 45bde61a7927e5945bcc8b4808cdf925, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12451172
+      y: 0.5644531
+      width: 0.12426758
+      height: 0.063964844
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.336171
+      width: 0.98748004
+      height: 0.662127
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ed044d4cf20068c4b81bf6bb6a115a59, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.7475586
+      y: 0.5637207
+      width: 0.061767578
+      height: 0.04711914
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.005232
+      y: 0.008917
+      width: 0.98319
+      height: 0.978239
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 95ae786c746d4eb4a8a7679219ba6634, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4362793
+      y: 0.51586914
+      width: 0.06201172
+      height: 0.04736328
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00371
+      y: 0.009773
+      width: 0.9902455
+      height: 0.982969
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: fea38ce5fce77ab46bb3e3b7addea255, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.74780273
+      y: 0.096191406
+      width: 0.12402344
+      height: 0.08911133
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.073864
+      width: 0.98748004
+      height: 0.924434
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 34ab0fddd9c542045b0a380ebf814dd5, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12451172
+      y: 0.89575195
+      width: 0.06225586
+      height: 0.047607422
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.004121
+      y: 0.006072
+      width: 0.99323297
+      height: 0.99143004
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 7d550830e1f216945b86ae73ba8516b1, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3112793
+      y: 0.7077637
+      width: 0.061767578
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0097
+      y: 0.00813
+      width: 0.98502
+      height: 0.98512
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 62dda7c8c060fd74b8e5e628fd81209c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24926758
+      y: 0.37109375
+      width: 0.06201172
+      height: 0.047851562
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.005261
+      y: 0.002547
+      width: 0.989477
+      height: 0.99451596
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: c9984483db7ac8c4ea662e288e275022, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3737793
+      y: 0.28173828
+      width: 0.12426758
+      height: 0.0703125
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.26951
+      width: 0.98748004
+      height: 0.728788
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: f26641698f5cf7d4b918c8d55a35e38f, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4970703
+      y: 0.70703125
+      width: 0.059814453
+      height: 0.047851562
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.011186
+      y: 0.002768
+      width: 0.954457
+      height: 0.99494904
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: e0c9433d6b6e49246a870a92b20fa0ae, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.43579102
+      y: 0.6591797
+      width: 0.060791016
+      height: 0.04711914
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.012787
+      y: 0.008648
+      width: 0.97186
+      height: 0.982588
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: a4f88c05930a38a47952709e4e4a2416, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.49951172
+      y: 0.37109375
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.004929
+      y: 0.005314
+      width: 0.99169797
+      height: 0.991219
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: d3f012eb907cbc348b66c6afc33578d4, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.28173828
+      width: 0.1237793
+      height: 0.08911133
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00678
+      y: 0.073864
+      width: 0.98569
+      height: 0.924434
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 54be4169512a2754f89416ca0b7a91b0, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8022461
+      y: 0.80029297
+      width: 0.060546875
+      height: 0.045898438
+    srcObjName: Eyewear
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.014243
+      y: 0.021419
+      width: 0.96324897
+      height: 0.958739
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 0695685b66d9a4f46882af4c299404a6, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.80981445
+      y: 0.5637207
+      width: 0.061767578
+      height: 0.046875
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.009729
+      y: 0.010048
+      width: 0.98607695
+      height: 0.97638804
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ffea7b14efcc27d41aff225df548846c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3112793
+      y: 0.9470215
+      width: 0.061767578
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0097
+      y: 0.00813
+      width: 0.98502
+      height: 0.98512
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 7e6ad843cabf26c4da6e01acde1364c6, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12451172
+      y: 0.7512207
+      width: 0.0625
+      height: 0.047607422
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.002755
+      y: 0.002136
+      width: 0.994687
+      height: 0.991767
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 102febec44de01945b9bc8966055c727, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3737793
+      y: 0.9445801
+      width: 0.061523438
+      height: 0.04663086
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008811
+      y: 0.011648
+      width: 0.980635
+      height: 0.973719
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: df2d3665640030547a5a84bb03e683ab, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.44335938
+      width: 0.1237793
+      height: 0.064941406
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00678
+      y: 0.324589
+      width: 0.98569
+      height: 0.673709
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 101c808fac51345418b52df8dfe20f12, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.8781738
+      width: 0.0625
+      height: 0.047851562
+    srcObjName: Hats
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0023
+      y: 0.0043
+      width: 0.9967
+      height: 0.9903
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ce91ddc0a833d644d8475299e34cd653, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.67993164
+      y: 0.80029297
+      width: 0.060791016
+      height: 0.046142578
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.013675
+      y: 0.023241
+      width: 0.97085303
+      height: 0.962449
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 0ae9ff01a74615e4181d0a2de2cd06a8, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24926758
+      y: 0.8046875
+      width: 0.061523438
+      height: 0.04736328
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.012328
+      y: 0.00879
+      width: 0.983031
+      height: 0.98512
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: c5afe38ae617aa147910fe0037de43da, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3737793
+      y: 0.8498535
+      width: 0.061523438
+      height: 0.046875
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008811
+      y: 0.011648
+      width: 0.980635
+      height: 0.973719
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 4a4f0cfd0eba1a940b219722e2bc1ae2, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.87231445
+      y: 0.28173828
+      width: 0.12426758
+      height: 0.064697266
+    srcObjName: Eyes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.325469
+      width: 0.98748004
+      height: 0.67282903
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 657712db0a1654347afc5ba31d2ee549, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.9250488
+      y: 0.7529297
+      width: 0.060791016
+      height: 0.046142578
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.013675
+      y: 0.023241
+      width: 0.97085303
+      height: 0.962449
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 1305a05a08022dd40ba6aecdafdf88b4, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24926758
+      y: 0.75683594
+      width: 0.061523438
+      height: 0.04736328
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.012328
+      y: 0.00879
+      width: 0.983031
+      height: 0.98512
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 19ce424a12d7208409bed6c3417bb136, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12475586
+      y: 0.00024414062
+      width: 0.12426758
+      height: 0.095458984
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.008318
+      width: 0.98748004
+      height: 0.98998
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 11e8580af1453424587c38a58c50fcf2, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.74072266
+      y: 0.7529297
+      width: 0.060302734
+      height: 0.046875
+    srcObjName: Eyewear
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.013538
+      y: 0.008113
+      width: 0.962829
+      height: 0.975795
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 7265cc9ab39b7544e92b3f4291ab80d9, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6188965
+      y: 0.84765625
+      width: 0.060546875
+      height: 0.046875
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.026558
+      y: 0.017193
+      width: 0.963424
+      height: 0.97463197
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ed1dcf5742d89934d89ab26eb3495c8c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6813965
+      y: 0.6586914
+      width: 0.061279297
+      height: 0.04663086
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008509
+      y: 0.012553
+      width: 0.977646
+      height: 0.96733004
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 76ea1ff637afd2e4c89c2d48b10b5b54, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24951172
+      y: 0.00024414062
+      width: 0.12402344
+      height: 0.095458984
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.008318
+      width: 0.98748004
+      height: 0.98998
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: a36bf8f72b29a1b499965fd7eafe34d4, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.74121094
+      y: 0.89404297
+      width: 0.060058594
+      height: 0.04663086
+    srcObjName: Eyewear
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.017904
+      y: 0.015755
+      width: 0.958297
+      height: 0.970109
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 34042b94d38338446b917d38e780c537, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.06274414
+      y: 0.9265137
+      width: 0.060546875
+      height: 0.047851562
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.001744
+      y: 0.001588
+      width: 0.963899
+      height: 0.99612904
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: e4821fc38db59464b87856fd0a24287a, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8051758
+      y: 0.6113281
+      width: 0.061279297
+      height: 0.04663086
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.010913
+      y: 0.01917
+      width: 0.97906697
+      height: 0.969679
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: d0758a8b1dd2b0e44bd93c95a0fe2876, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.685791
+      y: 0.4194336
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.005029
+      y: 0.004402
+      width: 0.98776996
+      height: 0.990458
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 1612dae866e51494995334d3fe13e8fd, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.9836426
+      width: 0.021972656
+      height: 0.008300781
+    srcObjName: Beards
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.636234
+      y: 0.192319
+      width: 0.35378098
+      height: 0.178951
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 0fe22e4c0ee110c4b8f5d3b5f4064052, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.67993164
+      y: 0.7529297
+      width: 0.060302734
+      height: 0.046875
+    srcObjName: Eyewear
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.013538
+      y: 0.008113
+      width: 0.962829
+      height: 0.97579503
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 987f0cd6fdb4b6e4cbd01469305f9ed0, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.68847656
+      y: 0.18579102
+      width: 0.021240234
+      height: 0.0056152344
+    srcObjName: Moustaches
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.647589
+      y: 0.212935
+      width: 0.34215796
+      height: 0.124193996
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 4a8293c8dc897f4488a631d39325fca5, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.06298828
+      y: 0.8300781
+      width: 0.061035156
+      height: 0.04711914
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.012787
+      y: 0.008648
+      width: 0.97186
+      height: 0.982588
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 80b5233cb894ccc42b43132dd9ab8dd3, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6855469
+      y: 0.5637207
+      width: 0.061523438
+      height: 0.04711914
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.005232
+      y: 0.008917
+      width: 0.98319
+      height: 0.978239
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 0712e2fba2f60fc41b140b9e9e612baa, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12451172
+      y: 0.37109375
+      width: 0.12426758
+      height: 0.064208984
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.332267
+      width: 0.98748004
+      height: 0.666031
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 2592ebf0a792dfe449d70edd977c4564, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.06298828
+      y: 0.63623047
+      width: 0.060546875
+      height: 0.048095703
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.018037
+      y: 0.001283
+      width: 0.96555495
+      height: 0.99823403
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: a0f195c7550f37f4d8edb49814d59bd3, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.49804688
+      y: 0.5637207
+      width: 0.06201172
+      height: 0.046875
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.007475
+      y: 0.015456
+      width: 0.98882896
+      height: 0.975986
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 3ca9704210eb2db4f9c93837065290fe, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6230469
+      y: 0.096191406
+      width: 0.12426758
+      height: 0.08911133
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.074187
+      width: 0.98748004
+      height: 0.924111
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 391487ac96c0f624cae936d9fc53b52f, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.74121094
+      y: 0.80029297
+      width: 0.060546875
+      height: 0.046142578
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.022065
+      y: 0.0197
+      width: 0.966173
+      height: 0.962795
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: d53008f54c19bc34b9908fe9974be269, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.75
+      y: 0.37109375
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.007629
+      y: 0.004803
+      width: 0.98974603
+      height: 0.990137
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 9fcfa3c63cd1cf748a12896530672c5d, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24951172
+      y: 0.19213867
+      width: 0.12402344
+      height: 0.08911133
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.07432
+      width: 0.98748004
+      height: 0.923978
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 83a712b00849e3644b30c188d410dc22, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.7426758
+      y: 0.70581055
+      width: 0.061279297
+      height: 0.04638672
+    srcObjName: Eyewear
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.009971499
+      y: 0.021615
+      width: 0.9775545
+      height: 0.96305096
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 4e82b675d7f3f754c836f12b09c648f5, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.63623047
+      width: 0.06225586
+      height: 0.048095703
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.001925
+      y: 0.000617
+      width: 0.994866
+      height: 0.99848396
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: b85a7ba8393948048944d6418726547c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.43579102
+      y: 0.7546387
+      width: 0.060791016
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.012787
+      y: 0.008648
+      width: 0.97186
+      height: 0.982588
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 59d9b703634f35b41953be8eb965096e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.55737305
+      y: 0.7531738
+      width: 0.061035156
+      height: 0.04663086
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.013664
+      y: 0.017225
+      width: 0.971877
+      height: 0.971275
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: a355eef072a82ff44ab27ce1cb38057d, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3112793
+      y: 0.6599121
+      width: 0.06201172
+      height: 0.04736328
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.006692
+      y: 0.006848
+      width: 0.987123
+      height: 0.98533005
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 25eb9f3b7b6d6c7418c366d9bd75ce65, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.00024414062
+      width: 0.12402344
+      height: 0.095458984
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.008318
+      width: 0.98748004
+      height: 0.98998
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 3257d85e367994e45a924247fcab1f68, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24926758
+      y: 0.46801758
+      width: 0.061523438
+      height: 0.047851562
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.003665
+      y: 0.000244
+      width: 0.98398405
+      height: 0.999129
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 64786a0f71c79a74a8329a5c10e0a3e8, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.873291
+      y: 0.4194336
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.003358
+      y: 0.004475
+      width: 0.988515
+      height: 0.988077
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: c6c1877c089aa5a4da6c47e4f7a73d38, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.5605469
+      y: 0.5637207
+      width: 0.06201172
+      height: 0.046875
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.007475
+      y: 0.015456
+      width: 0.98882896
+      height: 0.975986
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 389188291b33b7741b3c143708e23c66, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3737793
+      y: 0.80249023
+      width: 0.061279297
+      height: 0.046875
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.010154
+      y: 0.01232
+      width: 0.979144
+      height: 0.976111
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 5cd705be250a8674a8dd1ffc3387d4c5, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4987793
+      y: 0.096191406
+      width: 0.1237793
+      height: 0.095214844
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00678
+      y: 0.01193
+      width: 0.98569
+      height: 0.986368
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 0f6836b56e03d6f43828b60ea7faa8ba, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.68188477
+      y: 0.6113281
+      width: 0.061035156
+      height: 0.046875
+    srcObjName: Hats
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0138
+      y: 0.01559
+      width: 0.97410995
+      height: 0.97622
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 7645fcfd7d2c97a42b25a7e5491a9be3, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.43579102
+      y: 0.7067871
+      width: 0.060791016
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.012787
+      y: 0.008648
+      width: 0.97186
+      height: 0.982588
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 9ad8847f11f103b4cad4f55f274e2101, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.43579102
+      y: 0.8979492
+      width: 0.060791016
+      height: 0.04736328
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.011138
+      y: 0.011424
+      width: 0.969369
+      height: 0.982296
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: d2c9d70bfe6c09349aa9e5a22bbb1782, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.875
+      y: 0.37109375
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.007629
+      y: 0.004803
+      width: 0.98974603
+      height: 0.990137
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 22aaae202ad0ba74db9df67d80385273, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.74780273
+      y: 0.28173828
+      width: 0.12402344
+      height: 0.064941406
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.324589
+      width: 0.98748004
+      height: 0.673709
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: eeccbc6049fb9904fbecea4c04c40598, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.95214844
+      y: 0.890625
+      width: 0.041015625
+      height: 0.046875
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008015
+      y: 0.006985
+      width: 0.656079
+      height: 0.975468
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: fdccf9d717661a148aa800cf85acc2d3, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3112793
+      y: 0.8991699
+      width: 0.061767578
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0097
+      y: 0.00813
+      width: 0.98502
+      height: 0.98512
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 7b0b3948deff5d34da71698a305c69c4, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6188965
+      y: 0.7529297
+      width: 0.060546875
+      height: 0.046875
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.026558
+      y: 0.017193
+      width: 0.963424
+      height: 0.97463197
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: a2ab3088fe11fa646a40b5bdd0315ebb, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8720703
+      y: 0.5637207
+      width: 0.061767578
+      height: 0.046875
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0066
+      y: 0.0122
+      width: 0.9852
+      height: 0.9764
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 57add37f52ba17c40b262101c9cf758a, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12475586
+      y: 0.096191406
+      width: 0.12426758
+      height: 0.095214844
+    srcObjName: Eyes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.010362
+      width: 0.98748004
+      height: 0.98793596
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: f2455344b75bf2d49ae5d1e86bda1af7, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.9265137
+      width: 0.06201172
+      height: 0.047851562
+    srcObjName: Eyewear
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008933
+      y: 0.003131
+      width: 0.991533
+      height: 0.99487704
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: f595696fc34d10b4f839f0ebfbc2e94c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.7331543
+      width: 0.06225586
+      height: 0.048095703
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.003665
+      y: 0.000244
+      width: 0.993928
+      height: 0.999129
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 081cebf623c013c49be2d3e2a71f2e8e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.1875
+      y: 0.7993164
+      width: 0.060791016
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.012787
+      y: 0.008648
+      width: 0.97186
+      height: 0.982588
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 3eafcc62300dfbb41babe90abe6c9f6e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.55737305
+      y: 0.89453125
+      width: 0.060546875
+      height: 0.046875
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.026558
+      y: 0.017193
+      width: 0.963424
+      height: 0.97463197
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: c4664d3150aea184ab3df8dc9bf59ab9, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.56152344
+      y: 0.51586914
+      width: 0.06201172
+      height: 0.04736328
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00371
+      y: 0.009773
+      width: 0.9902455
+      height: 0.982969
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 070f80a50acf73e499ff851b417105bc, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12475586
+      y: 0.19213867
+      width: 0.12426758
+      height: 0.08911133
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.073864
+      width: 0.98748004
+      height: 0.924434
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 4a0d8069200bced41b0aa9b046508d7e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8112793
+      y: 0.51586914
+      width: 0.061767578
+      height: 0.04711914
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0059
+      y: 0.0108
+      width: 0.98759997
+      height: 0.9816
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 554746a367ea07a4b8bd6a85eaebc95e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.8300781
+      width: 0.06225586
+      height: 0.047607422
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.002597
+      y: 0.004968
+      width: 0.99495304
+      height: 0.99262303
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: e9d083e3963abf94b93f78ba49ad5de4, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.5734863
+      width: 0.1237793
+      height: 0.06225586
+    srcObjName: Body
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00678
+      y: 0.351702
+      width: 0.98569
+      height: 0.64659595
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 57b0d6677a9fc414192dfc0ebf6ed70a, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.7434082
+      y: 0.6113281
+      width: 0.061279297
+      height: 0.04663086
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.017393
+      y: 0.014236
+      width: 0.977687
+      height: 0.972341
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 9ff4443c07e2a5f47a3505223f2785d6, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.9243164
+      y: 0.80029297
+      width: 0.060791016
+      height: 0.04321289
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.018339
+      y: 0.064147
+      width: 0.966834
+      height: 0.90028703
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 2e93485f2704dfe468a5997d46c08674, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.7480469
+      y: 0.00024414062
+      width: 0.12402344
+      height: 0.095214844
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.00946
+      width: 0.98748004
+      height: 0.988838
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ebb0dbedddce0f04e80732557a704fec, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24926758
+      y: 0.4194336
+      width: 0.061767578
+      height: 0.048095703
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0075
+      y: 0.001999
+      width: 0.9846
+      height: 0.996116
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 17aaa65d2a512094da59b31823056d0b, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8666992
+      y: 0.6586914
+      width: 0.061279297
+      height: 0.04663086
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.013219
+      y: 0.015182
+      width: 0.97986
+      height: 0.966585
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: f764c448dc213024eb193e5a7fbbbe25, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6188965
+      y: 0.80029297
+      width: 0.060546875
+      height: 0.046875
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.026558
+      y: 0.017193
+      width: 0.963424
+      height: 0.97463197
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 52aee3bafda7ae347a2aaf2523ebc781, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.9343262
+      y: 0.5637207
+      width: 0.061523438
+      height: 0.046875
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008811
+      y: 0.011648
+      width: 0.981125
+      height: 0.973719
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: f7ecfa9ac388bbb439c0d110985d064d, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12451172
+      y: 0.50024414
+      width: 0.12426758
+      height: 0.0637207
+    srcObjName: Eyes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.335923
+      width: 0.98748004
+      height: 0.662375
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 5ae0e83e881980647b689ce74689f4b4, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.5612793
+      y: 0.46801758
+      width: 0.06201172
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.003358
+      y: 0.004475
+      width: 0.988515
+      height: 0.988077
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: b5a7736b000fcac4d8f5c5116575daa0, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.55737305
+      y: 0.80029297
+      width: 0.061035156
+      height: 0.04663086
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0145
+      y: 0.0173
+      width: 0.9737
+      height: 0.9706
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 05f6c9fa0f59a994fb9a43052c26fcd2, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8017578
+      y: 0.8469238
+      width: 0.060791016
+      height: 0.04321289
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.018339
+      y: 0.064147
+      width: 0.966834
+      height: 0.90028703
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 24c5b106cc274ad48886f434b583f6c6, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8725586
+      y: 0.00024414062
+      width: 0.12426758
+      height: 0.095214844
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.00946
+      width: 0.98748004
+      height: 0.988838
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ea98c80aa280a3e4c851f0dfbd14e40d, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.92749023
+      y: 0.70581055
+      width: 0.061035156
+      height: 0.04638672
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.022065
+      y: 0.0197
+      width: 0.974046
+      height: 0.962795
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 3698c09c543cf9842b052e1aa1bd3a21, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.87353516
+      y: 0.51586914
+      width: 0.06201172
+      height: 0.04711914
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0059
+      y: 0.0105
+      width: 0.98759997
+      height: 0.9819
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 7e45b07aef2ce40458d6c2adc922e0b7, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3737793
+      y: 0.75512695
+      width: 0.061279297
+      height: 0.046875
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.014002
+      y: 0.015581
+      width: 0.978715
+      height: 0.975235
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 2b075bb42a195314fbcd96a6efbdcd74, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.43579102
+      y: 0.85009766
+      width: 0.060546875
+      height: 0.04736328
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0137
+      y: 0.0066
+      width: 0.9674
+      height: 0.9855
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 1bbc04e69561bed4fb7b86b568cbc9af, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.37402344
+      y: 0.19213867
+      width: 0.12426758
+      height: 0.08911133
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.073862
+      width: 0.98748004
+      height: 0.924436
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 0694ace6ec239e94d8cefd22f2851389, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4970703
+      y: 0.9001465
+      width: 0.059814453
+      height: 0.04638672
+    srcObjName: Eyewear
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.03201
+      y: 0.011735
+      width: 0.952365
+      height: 0.96182495
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: bf1a0426eca946a4cbc3fc67275800f9, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24926758
+      y: 0.5163574
+      width: 0.061523438
+      height: 0.047607422
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008327
+      y: 0.004729
+      width: 0.982969
+      height: 0.98987
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 93b59d4017a33f145ae8a549500840e1, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6188965
+      y: 0.70581055
+      width: 0.061523438
+      height: 0.04663086
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.013219
+      y: 0.015182
+      width: 0.97986
+      height: 0.966585
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 1c6daf2179837c64db34164ae7ebee2e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12451172
+      y: 0.94384766
+      width: 0.06225586
+      height: 0.047851562
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.004019
+      y: 0.002756
+      width: 0.99078995
+      height: 0.992583
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ab1d3be9bbd33b443b19bb42c586d43c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3737793
+      y: 0.61157227
+      width: 0.061523438
+      height: 0.04711914
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0125
+      y: 0.012
+      width: 0.9811
+      height: 0.9826
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 25fdc6f198759154f9813ba5e33dcd32, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4987793
+      y: 0.19213867
+      width: 0.12402344
+      height: 0.08911133
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.073862
+      width: 0.98748004
+      height: 0.924436
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: e2aedf2e31f4f544caec41f9bdec40ac, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6188965
+      y: 0.89501953
+      width: 0.060302734
+      height: 0.04711914
+    srcObjName: Eyewear
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.013538
+      y: 0.006823
+      width: 0.962829
+      height: 0.977085
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 65fa7db5ee89dfd428f8044402e9f9ca, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4970703
+      y: 0.85180664
+      width: 0.057861328
+      height: 0.047851562
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.064669
+      y: 0.001569
+      width: 0.920745
+      height: 0.99798
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 3546ee519c5b86246a3a62a2ed305475, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.62402344
+      y: 0.51586914
+      width: 0.061767578
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0097
+      y: 0.00813
+      width: 0.98502
+      height: 0.98512
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 895eeacbe0e3757408a0473375fa0543, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.55737305
+      y: 0.70581055
+      width: 0.061035156
+      height: 0.046875
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.013664
+      y: 0.017225
+      width: 0.97385997
+      height: 0.971275
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 490fbdd9a8bf8164ebb2839827074888, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3737793
+      y: 0.8972168
+      width: 0.061523438
+      height: 0.046875
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008811
+      y: 0.011648
+      width: 0.980635
+      height: 0.973719
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ac0fd4d8932ddec43a56cb41e8791eed, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24926758
+      y: 0.28173828
+      width: 0.12402344
+      height: 0.072509766
+    srcObjName: Eyes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.245866
+      width: 0.98748004
+      height: 0.752432
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: cbc0db59d2c057745a23bb1bcee83eee, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12451172
+      y: 0.7993164
+      width: 0.0625
+      height: 0.047851562
+    srcObjName: Hats
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.002762
+      y: 0.003735
+      width: 0.995932
+      height: 0.990987
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 4ed27a768ce6b6145b1ec47c9d4eb8d0, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4987793
+      y: 0.46801758
+      width: 0.06201172
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.003358
+      y: 0.004475
+      width: 0.988515
+      height: 0.988077
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 3c43a9b6f50bb174e90cb4060c01fff2, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.93603516
+      y: 0.51586914
+      width: 0.061767578
+      height: 0.04711914
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00617
+      y: 0.012
+      width: 0.98473
+      height: 0.98104
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 281028a978c34c8419c7d2ce238a16ea, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.74780273
+      y: 0.19213867
+      width: 0.1237793
+      height: 0.08911133
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00678
+      y: 0.073864
+      width: 0.98569
+      height: 0.924434
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 8eee5b7078e953e4baa70e0eef37e6e6, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6188965
+      y: 0.94262695
+      width: 0.060302734
+      height: 0.046875
+    srcObjName: Eyewear
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.013538
+      y: 0.006823
+      width: 0.962829
+      height: 0.977085
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 5abdc8a43e399e34691392a115099c67, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.7817383
+      width: 0.06225586
+      height: 0.047851562
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.002597
+      y: 0.004968
+      width: 0.99495304
+      height: 0.99262303
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: d7bd7b49c4b61574dbf7346f0bb952c6, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.37426758
+      y: 0.37109375
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.004929
+      y: 0.005314
+      width: 0.99169797
+      height: 0.991241
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: f02c8a0981bfea14abc0a54abc2e75bd, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.49853516
+      y: 0.28173828
+      width: 0.12402344
+      height: 0.064941406
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.32458
+      width: 0.98748004
+      height: 0.673718
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: e2ec1bc2a007b0d46a3283b0a0031c41, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.90771484
+      y: 0.939209
+      width: 0.041015625
+      height: 0.046875
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008015
+      y: 0.006985
+      width: 0.656079
+      height: 0.975468
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ffecd0b8c4a2c3a429833cb2fa3f2e12, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6237793
+      y: 0.46801758
+      width: 0.06201172
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.003358
+      y: 0.004475
+      width: 0.988515
+      height: 0.988077
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 1ea192901caf7854791b4c34aa1f5cc7, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.55737305
+      y: 0.94189453
+      width: 0.060546875
+      height: 0.046875
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.026558
+      y: 0.017193
+      width: 0.963424
+      height: 0.97463197
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 4825027e352b4f942801b672e62539ed, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.022705078
+      y: 0.9824219
+      width: 0.021972656
+      height: 0.0073242188
+    srcObjName: Beards
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.636234
+      y: 0.192319
+      width: 0.35378098
+      height: 0.157751
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 110519d3736ab2b439050f6e53e5fa31, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.49829102
+      y: 0.4194336
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.007629
+      y: 0.004803
+      width: 0.98974603
+      height: 0.990137
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 37601e5e2efa0f2488743bfcc1598020, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12451172
+      y: 0.6899414
+      width: 0.12426758
+      height: 0.060791016
+    srcObjName: Eyes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.36775
+      width: 0.98748004
+      height: 0.630548
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 803cad8b6f94b8148a0e525261479017, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.74121094
+      y: 0.9411621
+      width: 0.060058594
+      height: 0.04663086
+    srcObjName: Eyewear
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.017904
+      y: 0.015755
+      width: 0.958297
+      height: 0.970109
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: f3ff0863f6539ac48870e3ba996b02b9, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6203613
+      y: 0.6113281
+      width: 0.061035156
+      height: 0.046875
+    srcObjName: Hats
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0138
+      y: 0.01559
+      width: 0.97410995
+      height: 0.97622
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: d84b6d370aeee124aabeb5aa7fc77b48, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.66674805
+      y: 0.18579102
+      width: 0.021240234
+      height: 0.0056152344
+    srcObjName: Moustaches
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.647589
+      y: 0.212935
+      width: 0.34215796
+      height: 0.124193996
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: a0d4d763495172e4ea988d182be4972f, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.06323242
+      y: 0.8781738
+      width: 0.060791016
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.012787
+      y: 0.008648
+      width: 0.97186
+      height: 0.982588
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 8f0b3b9bd6198c64cb06dc8cee3fa9d1, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.06298828
+      y: 0.7331543
+      width: 0.061035156
+      height: 0.047607422
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00781
+      y: 0.00513
+      width: 0.9757
+      height: 0.98859
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: e4d2f7dd63a8b3d4ab4591c82ca2c26d, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.99243164
+      width: 0.021972656
+      height: 0.007080078
+    srcObjName: Beards
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.636234
+      y: 0.192319
+      width: 0.35378098
+      height: 0.157751
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 851a15a1cf195754ba6cdf78bdd6548e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6875
+      y: 0.37109375
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.007629
+      y: 0.004803
+      width: 0.98974603
+      height: 0.990137
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: fdb45de347e9b0e40bd74bfe6d938cfb, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12451172
+      y: 0.28173828
+      width: 0.12426758
+      height: 0.08886719
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.076749
+      width: 0.98748004
+      height: 0.92154896
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: c3c547a7fa62ba442964022431ae0923, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8017578
+      y: 0.890625
+      width: 0.061035156
+      height: 0.041748047
+    srcObjName: Hats
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.015941
+      y: 0.054504
+      width: 0.97119695
+      height: 0.870754
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 99c2dcf32f335264aa9cc00d1a620cef, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6230469
+      y: 0.18579102
+      width: 0.021240234
+      height: 0.005859375
+    srcObjName: Moustaches
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.647589
+      y: 0.2117205
+      width: 0.34215796
+      height: 0.1254085
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 07f2d3777b5b2cd4a9a0af1a448aa5eb, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3112793
+      y: 0.8034668
+      width: 0.061767578
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0097
+      y: 0.00813
+      width: 0.98502
+      height: 0.98512
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 262b640f012b4ee4eb1fc58e2dae5f9f, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24926758
+      y: 0.85253906
+      width: 0.061523438
+      height: 0.04711914
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0115
+      y: 0.013
+      width: 0.98295
+      height: 0.9808
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 107dd2435cabcf54cb6789bedc5dcf92, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.74316406
+      y: 0.6586914
+      width: 0.061279297
+      height: 0.04663086
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008509
+      y: 0.012553
+      width: 0.977646
+      height: 0.96733004
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 62bf4090479cea642983e2091f49ba4c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4987793
+      y: 0.00024414062
+      width: 0.12402344
+      height: 0.095458984
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.008318
+      width: 0.98748004
+      height: 0.98998
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 2007978b70b23cd4d893419c2c441974, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.06298828
+      y: 0.7817383
+      width: 0.060791016
+      height: 0.047607422
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.011078
+      y: 0.00675
+      width: 0.969091
+      height: 0.98882604
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 1be372a416a83d146a88964ca0b41036, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3737793
+      y: 0.51586914
+      width: 0.06201172
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0059
+      y: 0.0116
+      width: 0.98889995
+      height: 0.98499995
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: b33dc0788a9ae9440b3fbd0834d497d4, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12451172
+      y: 0.84765625
+      width: 0.06225586
+      height: 0.047607422
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.004019
+      y: 0.002756
+      width: 0.99078995
+      height: 0.992583
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 8c3e7fef168cc014a977636cdf49e530, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4970703
+      y: 0.7553711
+      width: 0.059570312
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.032512
+      y: 0.003811
+      width: 0.948449
+      height: 0.986027
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: fccf573d4c31f2b4787e64e3d197e179, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24951172
+      y: 0.096191406
+      width: 0.12402344
+      height: 0.095214844
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.01193
+      width: 0.98748004
+      height: 0.986368
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: b20607da6fb7a554f921afa657ab806a, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4970703
+      y: 0.6586914
+      width: 0.059814453
+      height: 0.047851562
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.011186
+      y: 0.002768
+      width: 0.954457
+      height: 0.99494904
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 92a4168a10ee9ca4690333d98beabef7, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.43579102
+      y: 0.6113281
+      width: 0.060791016
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.012787
+      y: 0.008648
+      width: 0.97186
+      height: 0.982588
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: b385d904b642b9e4db54db449aac29af, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.86328125
+      y: 0.80029297
+      width: 0.060546875
+      height: 0.045898438
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.01495
+      y: 0.033751
+      width: 0.967203
+      height: 0.953177
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 8e73f86cd304f8544b32ce04e94bbf99, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8630371
+      y: 0.8469238
+      width: 0.060546875
+      height: 0.04321289
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.018339
+      y: 0.064147
+      width: 0.966834
+      height: 0.90028703
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: e7486baa786158f48a0fd68f2f3db977, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.096191406
+      width: 0.12402344
+      height: 0.095458984
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.00946
+      width: 0.98748004
+      height: 0.988838
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: fc45628a456959b42ac7599e1d12a9fb, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24926758
+      y: 0.5644531
+      width: 0.061523438
+      height: 0.047607422
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008327
+      y: 0.004729
+      width: 0.982969
+      height: 0.98987
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: f4cca75173a2fc84dadb56a49c337856, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6809082
+      y: 0.70581055
+      width: 0.061279297
+      height: 0.04663086
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.013219
+      y: 0.015182
+      width: 0.97986
+      height: 0.966585
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 06526b882a426a848af48ff3e829447d, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.31176758
+      y: 0.37109375
+      width: 0.06201172
+      height: 0.047851562
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.005261
+      y: 0.002547
+      width: 0.989477
+      height: 0.99451596
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 1e0d397929d33d74c9b76452eb22918d, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.80493164
+      y: 0.6586914
+      width: 0.061279297
+      height: 0.04663086
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008509
+      y: 0.012553
+      width: 0.977646
+      height: 0.96733004
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 397e2d7f785d98346ae25fb7725281bc, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.37402344
+      y: 0.00024414062
+      width: 0.12426758
+      height: 0.095458984
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.008318
+      width: 0.98748004
+      height: 0.98998
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 87bfb0659aa7b4449934f95f995a5eb7, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.74121094
+      y: 0.8469238
+      width: 0.060058594
+      height: 0.04663086
+    srcObjName: Eyewear
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.017904
+      y: 0.015755
+      width: 0.958297
+      height: 0.970109
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ae8c7e23548842f4a9e16b5a784621c6, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3737793
+      y: 0.6591797
+      width: 0.060302734
+      height: 0.048095703
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.001744
+      y: 0.001588
+      width: 0.963899
+      height: 0.99612904
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 388c9bf566c0e4e48bd0ffdba5d6a94a, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6862793
+      y: 0.46801758
+      width: 0.06201172
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.003358
+      y: 0.004475
+      width: 0.988515
+      height: 0.988077
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 61d5bce9088691249bf6f4a645876573, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.18725586
+      y: 0.89575195
+      width: 0.061523438
+      height: 0.046875
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.014002
+      y: 0.015581
+      width: 0.978715
+      height: 0.975235
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 3fb72759f67692741a637ebffcebf01d, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.560791
+      y: 0.4194336
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.007629
+      y: 0.004803
+      width: 0.98974603
+      height: 0.990137
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 4dedf02c85333ff4dabf89a7f10861f2, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.50878906
+      width: 0.1237793
+      height: 0.064208984
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00678
+      y: 0.332267
+      width: 0.98569
+      height: 0.666031
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: c432e962d5a954147b4f960cb86e5291, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.43579102
+      y: 0.9458008
+      width: 0.059814453
+      height: 0.047851562
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.011186
+      y: 0.002768
+      width: 0.954457
+      height: 0.99494904
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: f6bd35c335e8df344916c924d383e31a, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.9284668
+      y: 0.6586914
+      width: 0.061523438
+      height: 0.04663086
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.013219
+      y: 0.015182
+      width: 0.97986
+      height: 0.966585
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 1300dd7a18c5c2143ac4f50972bbce59, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6230469
+      y: 0.5637207
+      width: 0.06201172
+      height: 0.046875
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.007475
+      y: 0.015456
+      width: 0.98882896
+      height: 0.975986
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: c139226a2a034254aa5345e29a79e4cd, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.9375
+      y: 0.37109375
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.007629
+      y: 0.004803
+      width: 0.98974603
+      height: 0.990137
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 15d55ff1497f4734fb5f39d438ada5c3, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.19213867
+      width: 0.12402344
+      height: 0.08911133
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.07446
+      width: 0.98748004
+      height: 0.923838
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 24ad7e3145295864f938be41c5ac779f, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.31152344
+      y: 0.4194336
+      width: 0.061767578
+      height: 0.048095703
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0075
+      y: 0.001999
+      width: 0.9846
+      height: 0.996116
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 72a7c3cf70d72fe46b20ba51e2d3c0f0, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3737793
+      y: 0.46801758
+      width: 0.06201172
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.003358
+      y: 0.004475
+      width: 0.988515
+      height: 0.988077
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 19132007f507a274aaed1648d4242deb, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.74853516
+      y: 0.51586914
+      width: 0.06225586
+      height: 0.04711914
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.005401
+      y: 0.016714
+      width: 0.99154896
+      height: 0.978755
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 795119fa9623a314fb11eb28b4d75edd, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.623291
+      y: 0.4194336
+      width: 0.06201172
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.007629
+      y: 0.004803
+      width: 0.98974603
+      height: 0.990137
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: a2690186eaf4e1a4385cdc505ff198aa, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6230469
+      y: 0.28173828
+      width: 0.12426758
+      height: 0.064941406
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.324589
+      width: 0.98748004
+      height: 0.673709
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: ebecc88790e04784aab1a1342d1519d3, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6191406
+      y: 0.6586914
+      width: 0.061767578
+      height: 0.04638672
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.009056
+      y: 0.026587
+      width: 0.98291504
+      height: 0.963987
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 52eb5947283e84a4eb7637dafcf1980a, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3112793
+      y: 0.51586914
+      width: 0.06201172
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.005295
+      y: 0.006333
+      width: 0.988105
+      height: 0.987081
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: d71ac1232acca014d97a86a94e151a59, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3112793
+      y: 0.5637207
+      width: 0.061767578
+      height: 0.047607422
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.007245
+      y: 0.006172
+      width: 0.985743
+      height: 0.989447
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 98796ba943437604ca8a82e7014a0a2e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.18725586
+      y: 0.94384766
+      width: 0.061523438
+      height: 0.04736328
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0125
+      y: 0.012
+      width: 0.9811
+      height: 0.9826
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 58d652671c785eb4fbe0a99e79a17136, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.8720703
+      y: 0.19213867
+      width: 0.12402344
+      height: 0.08911133
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00678
+      y: 0.073862
+      width: 0.98569
+      height: 0.924436
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: a1d784cef5cfbe34ca9d52dea1c5ad32, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24926758
+      y: 0.66064453
+      width: 0.061523438
+      height: 0.047607422
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008327
+      y: 0.004729
+      width: 0.982969
+      height: 0.98987
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: e80010a233581984cb91e3ff7147cf17, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6862793
+      y: 0.51586914
+      width: 0.061767578
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0097
+      y: 0.00813
+      width: 0.98502
+      height: 0.98512
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 40ca640db80481e4d92c61ac247316d2, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3112793
+      y: 0.6118164
+      width: 0.061767578
+      height: 0.047607422
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.007999999
+      y: 0.009
+      width: 0.9849
+      height: 0.987907
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: e88accde2df2d4b4ab0891e0aec9763c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.43676758
+      y: 0.37109375
+      width: 0.06225586
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.004929
+      y: 0.005314
+      width: 0.99169797
+      height: 0.991219
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 6e6c0af949d0bb949aa98ae141a7e6e3, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.623291
+      y: 0.19213867
+      width: 0.12402344
+      height: 0.08911133
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00678
+      y: 0.074187
+      width: 0.98569
+      height: 0.924111
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 2349afec11a28514eb43ea14d96fa858, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.86328125
+      y: 0.939209
+      width: 0.043945312
+      height: 0.047851562
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.255138
+      y: 0.003523
+      width: 0.703501
+      height: 0.996303
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 628319469e5d60243bcf4b20a1f4a5a0, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3112793
+      y: 0.75561523
+      width: 0.061767578
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0097
+      y: 0.00813
+      width: 0.98502
+      height: 0.98512
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 10f787db8151c1b48ac4b6a25eb495b9, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24926758
+      y: 0.9477539
+      width: 0.061523438
+      height: 0.04736328
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0115
+      y: 0.013
+      width: 0.9835
+      height: 0.9808
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: d9a637b74ccd1f047a84b4bcef775153, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24926758
+      y: 0.70874023
+      width: 0.061523438
+      height: 0.047607422
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.012607
+      y: 0.003995
+      width: 0.98408604
+      height: 0.988353
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: eee590a5b6875c1418f9276c762dcc74, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.18725586
+      y: 0.84765625
+      width: 0.061279297
+      height: 0.04736328
+    srcObjName: Hair
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.011161501
+      y: 0.004729
+      width: 0.9801345
+      height: 0.98987
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 344cd83cf22c7fd4e8c54b7620f6f3c1, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.92407227
+      y: 0.8469238
+      width: 0.061279297
+      height: 0.042236328
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0154
+      y: 0.0996
+      width: 0.9757
+      height: 0.8778
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 690a2986c43cd844aaaa99e763d91cb5, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.3737793
+      y: 0.5637207
+      width: 0.061523438
+      height: 0.04736328
+    srcObjName: Bottoms
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0125
+      y: 0.012
+      width: 0.9811
+      height: 0.9826
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 71bc7ef07d5884d44b3c47f73ba3f34c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12451172
+      y: 0.62890625
+      width: 0.12426758
+      height: 0.060546875
+    srcObjName: Eyelashes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00499
+      y: 0.367786
+      width: 0.98748004
+      height: 0.630512
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 424972b22e40b0743869845c1629cc33, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.4362793
+      y: 0.46801758
+      width: 0.06201172
+      height: 0.04736328
+    srcObjName: Shoes
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.003358
+      y: 0.004475
+      width: 0.988515
+      height: 0.988077
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  - material: {fileID: 2100000, guid: 0c6af7b741da3094ca8dd09870fca4da, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.06298828
+      y: 0.68481445
+      width: 0.061035156
+      height: 0.04736328
+    srcObjName: Tops
+    allPropsUseSameTiling: 1
+    allPropsUseSameTiling_sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    allPropsUseSameTiling_samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00781
+      y: 0.00513
+      width: 0.9757
+      height: 0.98859
+    propsUseDifferntTiling_srcUVsamplingRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    tilingTreatment: 1
+  resultMaterials:
+  - combinedMaterial: {fileID: 2100000, guid: 3cc411b55200612438830e2c2b457166, type: 2}
+    considerMeshUVs: 1
+    sourceMaterials:
+    - {fileID: 2100000, guid: 2416b4481b4145b4cb1c01bc94782591, type: 2}
+    - {fileID: 2100000, guid: edbef517984edc54681f05ed2e604d4c, type: 2}
+    - {fileID: 2100000, guid: 85bc0bc613c67ef4eb81b833ba3c6758, type: 2}
+    - {fileID: 2100000, guid: ca68b93e6e77d0541989344980d318ff, type: 2}
+    - {fileID: 2100000, guid: fabe48697dc25394db62402c2bf36b50, type: 2}
+    - {fileID: 2100000, guid: 6ca4205186d4ddb43ba986c3120d5863, type: 2}
+    - {fileID: 2100000, guid: bddf513f106154545b6afa8843f41838, type: 2}
+    - {fileID: 2100000, guid: 7bdd1ee012d5e5e488ec4222bb22fdac, type: 2}
+    - {fileID: 2100000, guid: ac6e2ac6b9752a746af0fddc519aa1ab, type: 2}
+    - {fileID: 2100000, guid: cc36f6cb4e5932047aa52b9dbe24145d, type: 2}
+    - {fileID: 2100000, guid: 97fb7aa2548aeec4d9c26a0f0e05936b, type: 2}
+    - {fileID: 2100000, guid: 83261a97a36e8d04e909547a7c02451d, type: 2}
+    - {fileID: 2100000, guid: 428e995d701a7ed4b9672777843f1b62, type: 2}
+    - {fileID: 2100000, guid: b36bc7c8972d6624992f3081c7ce0a5e, type: 2}
+    - {fileID: 2100000, guid: 72881239521dc4a469421a3a780656b2, type: 2}
+    - {fileID: 2100000, guid: ca00f14df49f6704584e202c8e11e050, type: 2}
+    - {fileID: 2100000, guid: 309295651a032e942965f99280621311, type: 2}
+    - {fileID: 2100000, guid: cea627ac1b6844e44b29557a5bafa8f6, type: 2}
+    - {fileID: 2100000, guid: bbff185cdef0e5d4b89fcc015d62a0d1, type: 2}
+    - {fileID: 2100000, guid: 771bad975eb56a54d84ed40e05e6e806, type: 2}
+    - {fileID: 2100000, guid: 4f307fe52fcf0694da7bde618a798969, type: 2}
+    - {fileID: 2100000, guid: 7605ce9367e03b84c9ec6368a008be02, type: 2}
+    - {fileID: 2100000, guid: 77c596d5a0f36944ea9ea775ef27e0f0, type: 2}
+    - {fileID: 2100000, guid: 4ef0b690d3d82e14fb8ebc3d8e1367d5, type: 2}
+    - {fileID: 2100000, guid: 65d384ba06382144c8f9b5ab03436e80, type: 2}
+    - {fileID: 2100000, guid: 288dfc520f2c79b4f98e832b05a3c419, type: 2}
+    - {fileID: 2100000, guid: 2ea442a9d2864114e9abfee4e839ff80, type: 2}
+    - {fileID: 2100000, guid: b757bc57e7bf2fe4ab5bb8fe19f5ef5b, type: 2}
+    - {fileID: 2100000, guid: 9435fb5823bf78140a77293033d419ec, type: 2}
+    - {fileID: 2100000, guid: ddf8bf0c6a791c84594b1f6830990d35, type: 2}
+    - {fileID: 2100000, guid: 201185d724bb2834eaa30822751d4446, type: 2}
+    - {fileID: 2100000, guid: 6a068187d1649e246b77ed7f29ce2ee2, type: 2}
+    - {fileID: 2100000, guid: 1e1e0ef4b60cf134c8fe31a5df494193, type: 2}
+    - {fileID: 2100000, guid: 90001ab591b176946beda24247feac78, type: 2}
+    - {fileID: 2100000, guid: 0d2f61ce623fb634b9c04ee8e70dceb5, type: 2}
+    - {fileID: 2100000, guid: c3861fdb1d3c2b84e929deb0bc80240d, type: 2}
+    - {fileID: 2100000, guid: bc09a646cdf3f3c49b543f6744b7691e, type: 2}
+    - {fileID: 2100000, guid: 20b298b384d2b5e40a95a2996ffa034b, type: 2}
+    - {fileID: 2100000, guid: 6a1831974ef75f54ba4295c579a88cf2, type: 2}
+    - {fileID: 2100000, guid: 30c339549be1b1342a0b054fe6a24fe9, type: 2}
+    - {fileID: 2100000, guid: bbc0af754fa80544e8ca9f25c93e865a, type: 2}
+    - {fileID: 2100000, guid: b5a001869a6ede247860d4c2313c1f4e, type: 2}
+    - {fileID: 2100000, guid: b3057720066bfa34fb3e918a15704115, type: 2}
+    - {fileID: 2100000, guid: 67e62d8be45960e4190ccee1b83530ed, type: 2}
+    - {fileID: 2100000, guid: dc7c3471ff371624c8de2190d4e30391, type: 2}
+    - {fileID: 2100000, guid: 34e5fecac70857f4f88d3a70989df7c2, type: 2}
+    - {fileID: 2100000, guid: 055d6982618b410478b63402b838fbe5, type: 2}
+    - {fileID: 2100000, guid: 0b563ef150bd3264fa3080ff7b9b5ebb, type: 2}
+    - {fileID: 2100000, guid: c55f3a1e2ccfd9c41b06a7c9d5c13cec, type: 2}
+    - {fileID: 2100000, guid: 45bde61a7927e5945bcc8b4808cdf925, type: 2}
+    - {fileID: 2100000, guid: ed044d4cf20068c4b81bf6bb6a115a59, type: 2}
+    - {fileID: 2100000, guid: 95ae786c746d4eb4a8a7679219ba6634, type: 2}
+    - {fileID: 2100000, guid: fea38ce5fce77ab46bb3e3b7addea255, type: 2}
+    - {fileID: 2100000, guid: 34ab0fddd9c542045b0a380ebf814dd5, type: 2}
+    - {fileID: 2100000, guid: 7d550830e1f216945b86ae73ba8516b1, type: 2}
+    - {fileID: 2100000, guid: 62dda7c8c060fd74b8e5e628fd81209c, type: 2}
+    - {fileID: 2100000, guid: c9984483db7ac8c4ea662e288e275022, type: 2}
+    - {fileID: 2100000, guid: f26641698f5cf7d4b918c8d55a35e38f, type: 2}
+    - {fileID: 2100000, guid: e0c9433d6b6e49246a870a92b20fa0ae, type: 2}
+    - {fileID: 2100000, guid: a4f88c05930a38a47952709e4e4a2416, type: 2}
+    - {fileID: 2100000, guid: d3f012eb907cbc348b66c6afc33578d4, type: 2}
+    - {fileID: 2100000, guid: 54be4169512a2754f89416ca0b7a91b0, type: 2}
+    - {fileID: 2100000, guid: 0695685b66d9a4f46882af4c299404a6, type: 2}
+    - {fileID: 2100000, guid: ffea7b14efcc27d41aff225df548846c, type: 2}
+    - {fileID: 2100000, guid: 7e6ad843cabf26c4da6e01acde1364c6, type: 2}
+    - {fileID: 2100000, guid: 102febec44de01945b9bc8966055c727, type: 2}
+    - {fileID: 2100000, guid: df2d3665640030547a5a84bb03e683ab, type: 2}
+    - {fileID: 2100000, guid: 101c808fac51345418b52df8dfe20f12, type: 2}
+    - {fileID: 2100000, guid: ce91ddc0a833d644d8475299e34cd653, type: 2}
+    - {fileID: 2100000, guid: 0ae9ff01a74615e4181d0a2de2cd06a8, type: 2}
+    - {fileID: 2100000, guid: c5afe38ae617aa147910fe0037de43da, type: 2}
+    - {fileID: 2100000, guid: 4a4f0cfd0eba1a940b219722e2bc1ae2, type: 2}
+    - {fileID: 2100000, guid: 657712db0a1654347afc5ba31d2ee549, type: 2}
+    - {fileID: 2100000, guid: 1305a05a08022dd40ba6aecdafdf88b4, type: 2}
+    - {fileID: 2100000, guid: 19ce424a12d7208409bed6c3417bb136, type: 2}
+    - {fileID: 2100000, guid: 11e8580af1453424587c38a58c50fcf2, type: 2}
+    - {fileID: 2100000, guid: 7265cc9ab39b7544e92b3f4291ab80d9, type: 2}
+    - {fileID: 2100000, guid: ed1dcf5742d89934d89ab26eb3495c8c, type: 2}
+    - {fileID: 2100000, guid: 76ea1ff637afd2e4c89c2d48b10b5b54, type: 2}
+    - {fileID: 2100000, guid: a36bf8f72b29a1b499965fd7eafe34d4, type: 2}
+    - {fileID: 2100000, guid: 34042b94d38338446b917d38e780c537, type: 2}
+    - {fileID: 2100000, guid: e4821fc38db59464b87856fd0a24287a, type: 2}
+    - {fileID: 2100000, guid: d0758a8b1dd2b0e44bd93c95a0fe2876, type: 2}
+    - {fileID: 2100000, guid: 1612dae866e51494995334d3fe13e8fd, type: 2}
+    - {fileID: 2100000, guid: 0fe22e4c0ee110c4b8f5d3b5f4064052, type: 2}
+    - {fileID: 2100000, guid: 987f0cd6fdb4b6e4cbd01469305f9ed0, type: 2}
+    - {fileID: 2100000, guid: 4a8293c8dc897f4488a631d39325fca5, type: 2}
+    - {fileID: 2100000, guid: 80b5233cb894ccc42b43132dd9ab8dd3, type: 2}
+    - {fileID: 2100000, guid: 0712e2fba2f60fc41b140b9e9e612baa, type: 2}
+    - {fileID: 2100000, guid: 2592ebf0a792dfe449d70edd977c4564, type: 2}
+    - {fileID: 2100000, guid: a0f195c7550f37f4d8edb49814d59bd3, type: 2}
+    - {fileID: 2100000, guid: 3ca9704210eb2db4f9c93837065290fe, type: 2}
+    - {fileID: 2100000, guid: 391487ac96c0f624cae936d9fc53b52f, type: 2}
+    - {fileID: 2100000, guid: d53008f54c19bc34b9908fe9974be269, type: 2}
+    - {fileID: 2100000, guid: 9fcfa3c63cd1cf748a12896530672c5d, type: 2}
+    - {fileID: 2100000, guid: 83a712b00849e3644b30c188d410dc22, type: 2}
+    - {fileID: 2100000, guid: 4e82b675d7f3f754c836f12b09c648f5, type: 2}
+    - {fileID: 2100000, guid: b85a7ba8393948048944d6418726547c, type: 2}
+    - {fileID: 2100000, guid: 59d9b703634f35b41953be8eb965096e, type: 2}
+    - {fileID: 2100000, guid: a355eef072a82ff44ab27ce1cb38057d, type: 2}
+    - {fileID: 2100000, guid: 25eb9f3b7b6d6c7418c366d9bd75ce65, type: 2}
+    - {fileID: 2100000, guid: 3257d85e367994e45a924247fcab1f68, type: 2}
+    - {fileID: 2100000, guid: 64786a0f71c79a74a8329a5c10e0a3e8, type: 2}
+    - {fileID: 2100000, guid: c6c1877c089aa5a4da6c47e4f7a73d38, type: 2}
+    - {fileID: 2100000, guid: 389188291b33b7741b3c143708e23c66, type: 2}
+    - {fileID: 2100000, guid: 5cd705be250a8674a8dd1ffc3387d4c5, type: 2}
+    - {fileID: 2100000, guid: 0f6836b56e03d6f43828b60ea7faa8ba, type: 2}
+    - {fileID: 2100000, guid: 7645fcfd7d2c97a42b25a7e5491a9be3, type: 2}
+    - {fileID: 2100000, guid: 9ad8847f11f103b4cad4f55f274e2101, type: 2}
+    - {fileID: 2100000, guid: d2c9d70bfe6c09349aa9e5a22bbb1782, type: 2}
+    - {fileID: 2100000, guid: 22aaae202ad0ba74db9df67d80385273, type: 2}
+    - {fileID: 2100000, guid: eeccbc6049fb9904fbecea4c04c40598, type: 2}
+    - {fileID: 2100000, guid: fdccf9d717661a148aa800cf85acc2d3, type: 2}
+    - {fileID: 2100000, guid: 7b0b3948deff5d34da71698a305c69c4, type: 2}
+    - {fileID: 2100000, guid: a2ab3088fe11fa646a40b5bdd0315ebb, type: 2}
+    - {fileID: 2100000, guid: 57add37f52ba17c40b262101c9cf758a, type: 2}
+    - {fileID: 2100000, guid: f2455344b75bf2d49ae5d1e86bda1af7, type: 2}
+    - {fileID: 2100000, guid: f595696fc34d10b4f839f0ebfbc2e94c, type: 2}
+    - {fileID: 2100000, guid: 081cebf623c013c49be2d3e2a71f2e8e, type: 2}
+    - {fileID: 2100000, guid: 3eafcc62300dfbb41babe90abe6c9f6e, type: 2}
+    - {fileID: 2100000, guid: c4664d3150aea184ab3df8dc9bf59ab9, type: 2}
+    - {fileID: 2100000, guid: 070f80a50acf73e499ff851b417105bc, type: 2}
+    - {fileID: 2100000, guid: 4a0d8069200bced41b0aa9b046508d7e, type: 2}
+    - {fileID: 2100000, guid: 554746a367ea07a4b8bd6a85eaebc95e, type: 2}
+    - {fileID: 2100000, guid: e9d083e3963abf94b93f78ba49ad5de4, type: 2}
+    - {fileID: 2100000, guid: 57b0d6677a9fc414192dfc0ebf6ed70a, type: 2}
+    - {fileID: 2100000, guid: 9ff4443c07e2a5f47a3505223f2785d6, type: 2}
+    - {fileID: 2100000, guid: 2e93485f2704dfe468a5997d46c08674, type: 2}
+    - {fileID: 2100000, guid: ebb0dbedddce0f04e80732557a704fec, type: 2}
+    - {fileID: 2100000, guid: 17aaa65d2a512094da59b31823056d0b, type: 2}
+    - {fileID: 2100000, guid: f764c448dc213024eb193e5a7fbbbe25, type: 2}
+    - {fileID: 2100000, guid: 52aee3bafda7ae347a2aaf2523ebc781, type: 2}
+    - {fileID: 2100000, guid: f7ecfa9ac388bbb439c0d110985d064d, type: 2}
+    - {fileID: 2100000, guid: 5ae0e83e881980647b689ce74689f4b4, type: 2}
+    - {fileID: 2100000, guid: b5a7736b000fcac4d8f5c5116575daa0, type: 2}
+    - {fileID: 2100000, guid: 05f6c9fa0f59a994fb9a43052c26fcd2, type: 2}
+    - {fileID: 2100000, guid: 24c5b106cc274ad48886f434b583f6c6, type: 2}
+    - {fileID: 2100000, guid: ea98c80aa280a3e4c851f0dfbd14e40d, type: 2}
+    - {fileID: 2100000, guid: 3698c09c543cf9842b052e1aa1bd3a21, type: 2}
+    - {fileID: 2100000, guid: 7e45b07aef2ce40458d6c2adc922e0b7, type: 2}
+    - {fileID: 2100000, guid: 2b075bb42a195314fbcd96a6efbdcd74, type: 2}
+    - {fileID: 2100000, guid: 1bbc04e69561bed4fb7b86b568cbc9af, type: 2}
+    - {fileID: 2100000, guid: 0694ace6ec239e94d8cefd22f2851389, type: 2}
+    - {fileID: 2100000, guid: bf1a0426eca946a4cbc3fc67275800f9, type: 2}
+    - {fileID: 2100000, guid: 93b59d4017a33f145ae8a549500840e1, type: 2}
+    - {fileID: 2100000, guid: 1c6daf2179837c64db34164ae7ebee2e, type: 2}
+    - {fileID: 2100000, guid: ab1d3be9bbd33b443b19bb42c586d43c, type: 2}
+    - {fileID: 2100000, guid: 25fdc6f198759154f9813ba5e33dcd32, type: 2}
+    - {fileID: 2100000, guid: e2aedf2e31f4f544caec41f9bdec40ac, type: 2}
+    - {fileID: 2100000, guid: 65fa7db5ee89dfd428f8044402e9f9ca, type: 2}
+    - {fileID: 2100000, guid: 3546ee519c5b86246a3a62a2ed305475, type: 2}
+    - {fileID: 2100000, guid: 895eeacbe0e3757408a0473375fa0543, type: 2}
+    - {fileID: 2100000, guid: 490fbdd9a8bf8164ebb2839827074888, type: 2}
+    - {fileID: 2100000, guid: ac0fd4d8932ddec43a56cb41e8791eed, type: 2}
+    - {fileID: 2100000, guid: cbc0db59d2c057745a23bb1bcee83eee, type: 2}
+    - {fileID: 2100000, guid: 4ed27a768ce6b6145b1ec47c9d4eb8d0, type: 2}
+    - {fileID: 2100000, guid: 3c43a9b6f50bb174e90cb4060c01fff2, type: 2}
+    - {fileID: 2100000, guid: 281028a978c34c8419c7d2ce238a16ea, type: 2}
+    - {fileID: 2100000, guid: 8eee5b7078e953e4baa70e0eef37e6e6, type: 2}
+    - {fileID: 2100000, guid: 5abdc8a43e399e34691392a115099c67, type: 2}
+    - {fileID: 2100000, guid: d7bd7b49c4b61574dbf7346f0bb952c6, type: 2}
+    - {fileID: 2100000, guid: f02c8a0981bfea14abc0a54abc2e75bd, type: 2}
+    - {fileID: 2100000, guid: e2ec1bc2a007b0d46a3283b0a0031c41, type: 2}
+    - {fileID: 2100000, guid: ffecd0b8c4a2c3a429833cb2fa3f2e12, type: 2}
+    - {fileID: 2100000, guid: 1ea192901caf7854791b4c34aa1f5cc7, type: 2}
+    - {fileID: 2100000, guid: 4825027e352b4f942801b672e62539ed, type: 2}
+    - {fileID: 2100000, guid: 110519d3736ab2b439050f6e53e5fa31, type: 2}
+    - {fileID: 2100000, guid: 37601e5e2efa0f2488743bfcc1598020, type: 2}
+    - {fileID: 2100000, guid: 803cad8b6f94b8148a0e525261479017, type: 2}
+    - {fileID: 2100000, guid: f3ff0863f6539ac48870e3ba996b02b9, type: 2}
+    - {fileID: 2100000, guid: d84b6d370aeee124aabeb5aa7fc77b48, type: 2}
+    - {fileID: 2100000, guid: a0d4d763495172e4ea988d182be4972f, type: 2}
+    - {fileID: 2100000, guid: 8f0b3b9bd6198c64cb06dc8cee3fa9d1, type: 2}
+    - {fileID: 2100000, guid: e4d2f7dd63a8b3d4ab4591c82ca2c26d, type: 2}
+    - {fileID: 2100000, guid: 851a15a1cf195754ba6cdf78bdd6548e, type: 2}
+    - {fileID: 2100000, guid: fdb45de347e9b0e40bd74bfe6d938cfb, type: 2}
+    - {fileID: 2100000, guid: c3c547a7fa62ba442964022431ae0923, type: 2}
+    - {fileID: 2100000, guid: 99c2dcf32f335264aa9cc00d1a620cef, type: 2}
+    - {fileID: 2100000, guid: 07f2d3777b5b2cd4a9a0af1a448aa5eb, type: 2}
+    - {fileID: 2100000, guid: 262b640f012b4ee4eb1fc58e2dae5f9f, type: 2}
+    - {fileID: 2100000, guid: 107dd2435cabcf54cb6789bedc5dcf92, type: 2}
+    - {fileID: 2100000, guid: 62bf4090479cea642983e2091f49ba4c, type: 2}
+    - {fileID: 2100000, guid: 2007978b70b23cd4d893419c2c441974, type: 2}
+    - {fileID: 2100000, guid: 1be372a416a83d146a88964ca0b41036, type: 2}
+    - {fileID: 2100000, guid: b33dc0788a9ae9440b3fbd0834d497d4, type: 2}
+    - {fileID: 2100000, guid: 8c3e7fef168cc014a977636cdf49e530, type: 2}
+    - {fileID: 2100000, guid: fccf573d4c31f2b4787e64e3d197e179, type: 2}
+    - {fileID: 2100000, guid: b20607da6fb7a554f921afa657ab806a, type: 2}
+    - {fileID: 2100000, guid: 92a4168a10ee9ca4690333d98beabef7, type: 2}
+    - {fileID: 2100000, guid: b385d904b642b9e4db54db449aac29af, type: 2}
+    - {fileID: 2100000, guid: 8e73f86cd304f8544b32ce04e94bbf99, type: 2}
+    - {fileID: 2100000, guid: e7486baa786158f48a0fd68f2f3db977, type: 2}
+    - {fileID: 2100000, guid: fc45628a456959b42ac7599e1d12a9fb, type: 2}
+    - {fileID: 2100000, guid: f4cca75173a2fc84dadb56a49c337856, type: 2}
+    - {fileID: 2100000, guid: 06526b882a426a848af48ff3e829447d, type: 2}
+    - {fileID: 2100000, guid: 1e0d397929d33d74c9b76452eb22918d, type: 2}
+    - {fileID: 2100000, guid: 397e2d7f785d98346ae25fb7725281bc, type: 2}
+    - {fileID: 2100000, guid: 87bfb0659aa7b4449934f95f995a5eb7, type: 2}
+    - {fileID: 2100000, guid: ae8c7e23548842f4a9e16b5a784621c6, type: 2}
+    - {fileID: 2100000, guid: 388c9bf566c0e4e48bd0ffdba5d6a94a, type: 2}
+    - {fileID: 2100000, guid: 61d5bce9088691249bf6f4a645876573, type: 2}
+    - {fileID: 2100000, guid: 3fb72759f67692741a637ebffcebf01d, type: 2}
+    - {fileID: 2100000, guid: 4dedf02c85333ff4dabf89a7f10861f2, type: 2}
+    - {fileID: 2100000, guid: c432e962d5a954147b4f960cb86e5291, type: 2}
+    - {fileID: 2100000, guid: f6bd35c335e8df344916c924d383e31a, type: 2}
+    - {fileID: 2100000, guid: 1300dd7a18c5c2143ac4f50972bbce59, type: 2}
+    - {fileID: 2100000, guid: c139226a2a034254aa5345e29a79e4cd, type: 2}
+    - {fileID: 2100000, guid: 15d55ff1497f4734fb5f39d438ada5c3, type: 2}
+    - {fileID: 2100000, guid: 24ad7e3145295864f938be41c5ac779f, type: 2}
+    - {fileID: 2100000, guid: 72a7c3cf70d72fe46b20ba51e2d3c0f0, type: 2}
+    - {fileID: 2100000, guid: 19132007f507a274aaed1648d4242deb, type: 2}
+    - {fileID: 2100000, guid: 795119fa9623a314fb11eb28b4d75edd, type: 2}
+    - {fileID: 2100000, guid: a2690186eaf4e1a4385cdc505ff198aa, type: 2}
+    - {fileID: 2100000, guid: ebecc88790e04784aab1a1342d1519d3, type: 2}
+    - {fileID: 2100000, guid: 52eb5947283e84a4eb7637dafcf1980a, type: 2}
+    - {fileID: 2100000, guid: d71ac1232acca014d97a86a94e151a59, type: 2}
+    - {fileID: 2100000, guid: 98796ba943437604ca8a82e7014a0a2e, type: 2}
+    - {fileID: 2100000, guid: 58d652671c785eb4fbe0a99e79a17136, type: 2}
+    - {fileID: 2100000, guid: a1d784cef5cfbe34ca9d52dea1c5ad32, type: 2}
+    - {fileID: 2100000, guid: e80010a233581984cb91e3ff7147cf17, type: 2}
+    - {fileID: 2100000, guid: 40ca640db80481e4d92c61ac247316d2, type: 2}
+    - {fileID: 2100000, guid: e88accde2df2d4b4ab0891e0aec9763c, type: 2}
+    - {fileID: 2100000, guid: 6e6c0af949d0bb949aa98ae141a7e6e3, type: 2}
+    - {fileID: 2100000, guid: 2349afec11a28514eb43ea14d96fa858, type: 2}
+    - {fileID: 2100000, guid: 628319469e5d60243bcf4b20a1f4a5a0, type: 2}
+    - {fileID: 2100000, guid: 10f787db8151c1b48ac4b6a25eb495b9, type: 2}
+    - {fileID: 2100000, guid: d9a637b74ccd1f047a84b4bcef775153, type: 2}
+    - {fileID: 2100000, guid: eee590a5b6875c1418f9276c762dcc74, type: 2}
+    - {fileID: 2100000, guid: 344cd83cf22c7fd4e8c54b7620f6f3c1, type: 2}
+    - {fileID: 2100000, guid: 690a2986c43cd844aaaa99e763d91cb5, type: 2}
+    - {fileID: 2100000, guid: 71bc7ef07d5884d44b3c47f73ba3f34c, type: 2}
+    - {fileID: 2100000, guid: 424972b22e40b0743869845c1629cc33, type: 2}
+    - {fileID: 2100000, guid: 0c6af7b741da3094ca8dd09870fca4da, type: 2}
+  doMultiMaterial: 0
