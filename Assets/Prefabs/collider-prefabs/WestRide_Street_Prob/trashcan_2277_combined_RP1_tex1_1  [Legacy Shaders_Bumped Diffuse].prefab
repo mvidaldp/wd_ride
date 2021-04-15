@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4187502852947447191}
   - component: {fileID: 889350754823313262}
-  - component: {fileID: 7961147601505649063}
   - component: {fileID: 3764836619048331545}
+  - component: {fileID: 3236130746250459283}
   m_Layer: 0
   m_Name: trashcan_2277_combined_RP1_tex1_1  [Legacy Shaders_Bumped Diffuse]
   m_TagString: Untagged
@@ -41,7 +41,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8807225427352119779}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7961147601505649063
+--- !u!65 &3764836619048331545
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8807225427352119779}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0000001, z: 0.9999999}
+  m_Center: {x: 0, y: 0, z: -0.000045776367}
+--- !u!23 &3236130746250459283
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,16 +91,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &3764836619048331545
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8807225427352119779}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.0000001, z: 0.9999999}
-  m_Center: {x: 0, y: 0, z: -0.000045776367}
