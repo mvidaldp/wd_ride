@@ -4,6 +4,7 @@ using UnityEngine;
 public class ETRecorder : MonoBehaviour
 {
     public GameObject player; // to access the player
+    public ETM etm;
     private Vector3 headPosition; // used to save head-tracking data
     private Vector3 noseVector; // used to save head-tracking data
     private TobiiXR_EyeTrackingData _eyeTrackingWorld;
@@ -35,7 +36,7 @@ public class ETRecorder : MonoBehaviour
     void FixedUpdate()
     {
           // while the Coroutine is going on
-        if (!ETM.Instance.valOngoing && ETM.Instance.recording)
+        if (!etm.valOngoing && etm.recording)
         {
             /* GetEyeTrackingData():
              * Gets eye tracking data in the selected tracking space. Unless the underlying eye tracking provider does

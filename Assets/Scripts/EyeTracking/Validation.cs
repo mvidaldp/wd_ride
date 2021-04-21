@@ -10,6 +10,7 @@ public class Validation : MonoBehaviour
     public List<Vector3> keyPositions = new List<Vector3>();  // list to save the validation points in
     public float delay = 50f; // delay between the start of validation and the presentation of the first validation point
 
+    public ETM etm;
     // private variables
     private Vector3 validationSample; // vector to save the validation sample in
     private float animationTime = 1f; // time to animate (constant)
@@ -53,7 +54,7 @@ public class Validation : MonoBehaviour
     
     public void EndValidation()
     {
-        ETM.Instance.valOngoing = false;
+        etm.valOngoing = false;
         // usually inactive (so no validation points visible during exploration); set back to inactive
         gameObject.SetActive(false);
     }

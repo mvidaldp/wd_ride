@@ -1,8 +1,6 @@
 ﻿using Tobii.XR;
 using UnityEngine;
 using ViveSR.anipal.Eye;
-using System.Collections.Generic;
-using System.Linq;
 
 
 public class ETM : MonoBehaviour
@@ -10,7 +8,7 @@ public class ETM : MonoBehaviour
     // https://vr.tobii.com/sdk/develop/unity/documentation/api-reference/core/
     // http://developer.tobiipro.com/unity/unity-getting-started.html
 
-    public static ETM Instance { get; private set; } // to make it easy to call this script within other scripts
+    //public static ETM Instance { get; private set; } // to make it easy to call this script within other scripts
 
     // public variables assigned in the inspector
     public Validation validation; // call to validation script
@@ -52,7 +50,11 @@ public class ETM : MonoBehaviour
             validation.StartValidation();
         }
 
-        if (!valOngoing && !recording) recording = true;
+        if (!valOngoing && !recording)
+        {
+            
+            recording = true;
+        }
     }
     
 }
