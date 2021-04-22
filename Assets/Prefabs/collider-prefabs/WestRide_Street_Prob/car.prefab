@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4552627802720373491
+--- !u!1 &1466451229917923943
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,59 +8,59 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7832657179085730310}
-  - component: {fileID: 2549398840556749044}
-  - component: {fileID: 6133923002256440397}
-  - component: {fileID: 1023379933098172842}
+  - component: {fileID: 5171539157198516882}
+  - component: {fileID: 582802730442801248}
+  - component: {fileID: 9103988415565790425}
+  - component: {fileID: 3521961489182576543}
   m_Layer: 0
-  m_Name: shrubbery_2427_combined_Meadow_Grass_01_BakedWind_109  [Standard]
+  m_Name: car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7832657179085730310
+--- !u!4 &5171539157198516882
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4552627802720373491}
-  m_LocalRotation: {x: -0, y: -0.7164559, z: -0, w: 0.6976325}
-  m_LocalPosition: {x: -147.5, y: 101.45, z: 367.9}
-  m_LocalScale: {x: 8.562503, y: 0.7824663, z: 7.719343}
+  m_GameObject: {fileID: 1466451229917923943}
+  m_LocalRotation: {x: 0.00008043412, y: -0.013198596, z: -0.006093498, w: 0.9998943}
+  m_LocalPosition: {x: 144.31, y: 101.77, z: 111.4}
+  m_LocalScale: {x: 6.0112443, y: 1.7732811, z: 2.3672028}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -91.525, z: 0}
---- !u!33 &2549398840556749044
+  m_LocalEulerAnglesHint: {x: 0, y: -1.5130001, z: -0.698}
+--- !u!33 &582802730442801248
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4552627802720373491}
+  m_GameObject: {fileID: 1466451229917923943}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &6133923002256440397
+--- !u!65 &9103988415565790425
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4552627802720373491}
+  m_GameObject: {fileID: 1466451229917923943}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1023379933098172842
+--- !u!23 &3521961489182576543
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4552627802720373491}
+  m_GameObject: {fileID: 1466451229917923943}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
