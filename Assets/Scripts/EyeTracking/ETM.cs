@@ -11,27 +11,12 @@ public class ETM : MonoBehaviour
     //public static ETM Instance { get; private set; } // to make it easy to call this script within other scripts
 
     // public variables assigned in the inspector
+    public bool recording = true;
     public Validation validation; // call to validation script
-    public bool valOngoing = false;
-    public bool recording = false;
-    
-    // private variables 
-    private TobiiXR_Settings settings; 
 
-    
-    void Start()
-    {
-        // get eye tracker started
-        settings = new TobiiXR_Settings();
-        // settings.FieldOfUse = FieldOfUse.Interactive; // new API, not working with ours
-        TobiiXR.Start(settings);
-        
-        // Start the experiment with calibration and then validation 
-        //SRanipal_Eye_v2.LaunchEyeCalibration();
-        valOngoing = true;
-        // validation.ValidationRoutine();
-        validation.StartValidation();
-    }
+    // private variables 
+    //private TobiiXR_Settings settings; 
+
     
     void FixedUpdate()
     {
@@ -42,15 +27,15 @@ public class ETM : MonoBehaviour
             SRanipal_Eye_v2.LaunchEyeCalibration();
         } 
         // manually start validation when pressing V
-        else if (Input.GetKeyDown(KeyCode.V)) // TODO: add something to check you are not doing validation
+        else if (Input.GetKeyDown(KeyCode.V)) 
         {
             // change the variables to ensure that the timer is paused
             recording = false;
-            valOngoing = true;
+            validation.valOngoing = true;
             validation.StartValidation();
         }
 
-        if (!valOngoing && !recording)
+        if (!validation.valOngoing && !recording)
         {
             
             recording = true;

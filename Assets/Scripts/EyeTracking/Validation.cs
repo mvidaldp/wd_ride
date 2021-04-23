@@ -8,9 +8,10 @@ public class Validation : MonoBehaviour
     // public variables
     public GameObject player; // access player 
     public List<Vector3> keyPositions = new List<Vector3>();  // list to save the validation points in
-    public float delay = 50f; // delay between the start of validation and the presentation of the first validation point
+    public float delay = 1f; // delay between the start of validation and the presentation of the first validation point
+    public bool valOngoing = true;
 
-    public ETM etm;
+    //public ETM etm;
     // private variables
     private Vector3 validationSample; // vector to save the validation sample in
     private float animationTime = 1f; // time to animate (constant)
@@ -54,7 +55,7 @@ public class Validation : MonoBehaviour
     
     public void EndValidation()
     {
-        etm.valOngoing = false;
+        valOngoing = false;
         // usually inactive (so no validation points visible during exploration); set back to inactive
         gameObject.SetActive(false);
     }
@@ -78,6 +79,7 @@ public class Validation : MonoBehaviour
     // Coroutine for validation (used to have WaitForSeconds) 
     void FixedUpdate()
     {
+        Debug.Log("validation point update");
         // delay between start of validation and the validation points presentation
         if (!doingValidation && _delay > 0)
         {
@@ -157,7 +159,7 @@ public class Validation : MonoBehaviour
             // create a float array with the 3 errors
             float[] validationError = {errorX, errorY, errorZ};
             // call the function to save the validation errors
-            SaveValidation(validationError);
+            //SaveValidation(validationError);
             // if this is error is too big, calibration and validation are launched again
             if (errorX > 1 || errorY > 1 || errorZ > 1)
             {

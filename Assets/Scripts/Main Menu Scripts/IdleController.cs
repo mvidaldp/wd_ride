@@ -161,6 +161,8 @@ public class IdleController : MonoBehaviour
             Debug.Log("Loading Scene");
             if (WestdriveSettings.firstRun)
                 Debug.Log("first run");
+            
+            
             SceneManager.LoadScene("Stadt");
         }
         else

@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 using UnityEngine.UI;
 using Valve.VR.InteractionSystem;
+using Tobii.XR;
+using ViveSR.anipal.Eye;
 
 /// <summary>
 /// Loads the First announcement and loads the City in the background
@@ -13,6 +15,10 @@ public class ExperimentLoader : MonoBehaviour {
 
 
     private bool startSceneLoad = false;
+    private TobiiXR_Settings settings; 
+    public Validation validation; // call to validation script
+
+
     public bool isLoading
     {
         get
@@ -34,27 +40,41 @@ public class ExperimentLoader : MonoBehaviour {
     public float pauseForFirstVideo = 10f;
     public float logoPauseTime = 3f;
     // Stops all coroutines and loads the startNewScene Method
-    private void OnEnable()
+    private void Awake()
     {
         StopAllCoroutines();
-        Invoke("StartNewScene", logoPauseTime);
-       
+        
+        //Invoke("StartNewScene", logoPauseTime);
+        StartCoroutine(StartNewScene());
     }
     //Starts the new Scene and loads the City in the background
-    void StartNewScene()
+    IEnumerator StartNewScene()
     {
         if (!startSceneLoad)
         {
                 Debug.Log("Input Detected!");
                 startSceneLoad = true;
-                StartCoroutine(loadCityAsync());
+                //DO EYE STUFF HERE
+                // get eye tracker started
+                settings = new TobiiXR_Settings();
+                // settings.FieldOfUse = FieldOfUse.Interactive; // new API, not working with ours
+                TobiiXR.Start(settings);
+                
+        
+                // Start the experiment with calibration and then validation 
+                //SRanipal_Eye_v2.LaunchEyeCalibration();
+                validation.valOngoing = true;
+                validation.StartValidation();
+                while (validation.valOngoing)
+                    yield return null;
+                if (!validation.valOngoing) StartCoroutine(loadCityAsync());
         }
     }
     //loads the City in the background without switching scenes
     IEnumerator loadCityAsync()
     {
         Debug.Log("Loading coroutine started");
-        float fadeAlpha = 1f;
+        /*float fadeAlpha = 1f;
         while(fadeAlpha >=0f)
         {
             screen.alpha = fadeAlpha;
@@ -64,10 +84,11 @@ public class ExperimentLoader : MonoBehaviour {
         screen.alpha = 0f;
         fadeAlpha = 0f;
         yield return new WaitForEndOfFrame();
+        */
         
         Debug.Log("loading city scene in background started");        
         loader.GetComponent<Valve.VR.SteamVR_LoadLevel>().Trigger();
-        
+        yield return null;
     }
     //stops all Coroutines
     private void OnDisable()

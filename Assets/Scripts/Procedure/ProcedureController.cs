@@ -220,8 +220,8 @@ public class ProcedureController : MonoBehaviour
         else
         {
 #if UNITY_EDITOR
-            stereoCamera.SetActive(false);
-            camera = monoCamera;
+            monoCamera.SetActive(false);
+            camera = stereoCamera;
             camera.SetActive(true);
             
 //            monoCamera.SetActive(false);

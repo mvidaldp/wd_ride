@@ -36,7 +36,7 @@ public class ETRecorder : MonoBehaviour
     void FixedUpdate()
     {
           // while the Coroutine is going on
-        if (!etm.valOngoing && etm.recording)
+        if (etm.recording)
         {
             /* GetEyeTrackingData():
              * Gets eye tracking data in the selected tracking space. Unless the underlying eye tracking provider does
