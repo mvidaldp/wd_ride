@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 5613459086521042803, guid: c2c975bbb0a67774ca1d3d59c418357f,
         type: 3}
       propertyPath: m_Name
-      value: trashc_2292_combined_trashcans_mat_0  [Legacy Shaders/Diffuse]
+      value: trashc_2292_combined_trashcans_mat_0  [Legacy Shaders_Diffuse]
       objectReference: {fileID: 0}
     - target: {fileID: 2196100363409489798, guid: c2c975bbb0a67774ca1d3d59c418357f,
         type: 3}
@@ -87,5 +87,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7004266102657398708, guid: c2c975bbb0a67774ca1d3d59c418357f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c2c975bbb0a67774ca1d3d59c418357f, type: 3}

@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1388291268215430181, guid: d5517cc51fbfe694da708eed042cd8f8,
         type: 3}
       propertyPath: m_Name
-      value: streetbox_2297_combined_Box01  [Legacy Shaders/Bumped Diffuse]
+      value: streetbox_2297_combined_Box01  [Legacy Shaders_Bumped Diffuse] Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4672815998437926096, guid: d5517cc51fbfe694da708eed042cd8f8,
         type: 3}
@@ -82,5 +82,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.8817887
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: d5517cc51fbfe694da708eed042cd8f8, type: 3}
