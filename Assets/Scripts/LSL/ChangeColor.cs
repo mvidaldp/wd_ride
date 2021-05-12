@@ -1,6 +1,7 @@
 ﻿using System;
 using LSL;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChangeColor : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class ChangeColor : MonoBehaviour
     private Color32 colorTwo;
     private float referenceTime; 
     private AudioSource audioSource; // to play an audio clip
-    private Renderer renderer1;
+    private Image renderer1;
     private bool isPlaying;
     private bool colorChanged;
 
@@ -30,7 +31,7 @@ public class ChangeColor : MonoBehaviour
         colorTwo = Color.white;
         referenceTime = 0.5f;
         audioSource = GetComponent<AudioSource>();
-        renderer1 = GetComponent<Renderer>();
+        renderer1 = GetComponent<Image>();
         isPlaying = false;
         colorChanged = false;
             

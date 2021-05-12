@@ -2,9 +2,7 @@
 #define NOTTS
 #elif UNITY_STANDALONE_WIN
 #define NOTTS
-#endif
-using System.Collections;
-using System.Collections.Generic;
+#endif 
 using UnityEngine;
 public class AVASEvent : MonoBehaviour
 {

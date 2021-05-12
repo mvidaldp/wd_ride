@@ -154,7 +154,7 @@ public class ProcedureController : MonoBehaviour
         }
         else
         {
-            WestdriveSettings.experimentReload = reloadBehaviour.goToLobby;
+            WestdriveSettings.experimentReload = reloadBehaviour.close;
         }
         if (WestdriveSettings.firstRun)
         {
