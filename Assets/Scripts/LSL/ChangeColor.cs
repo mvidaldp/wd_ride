@@ -9,7 +9,8 @@ public class ChangeColor : MonoBehaviour
     private Color32 colorTwo;
     private float referenceTime; 
     private AudioSource audioSource; // to play an audio clip
-    private Image renderer1;
+    //private Image renderer1;
+    private Camera cam;
     private bool isPlaying;
     private bool colorChanged;
 
@@ -31,7 +32,8 @@ public class ChangeColor : MonoBehaviour
         colorTwo = Color.white;
         referenceTime = 0.5f;
         audioSource = GetComponent<AudioSource>();
-        renderer1 = GetComponent<Image>();
+        //renderer1 = GetComponent<Image>();
+        cam = GetComponent<Camera>();
         isPlaying = false;
         colorChanged = false;
             
@@ -63,16 +65,19 @@ public class ChangeColor : MonoBehaviour
         referenceTime -= Time.deltaTime;
         if (referenceTime < 0)
         {
-            renderer1.material.color = colorTwo;
+            //renderer1.material.color = colorTwo;
+            cam.backgroundColor = colorTwo;
             audioSource.Play();
             referenceTime = 0.5f;
         }
         else
         {
-            renderer1.material.color = colorOne;
+            //renderer1.material.color = colorOne;
+            cam.backgroundColor = colorOne;
         }
         
-        colorChanged = renderer1.material.color == colorTwo;
+        //colorChanged = renderer1.material.color == colorTwo;
+        colorChanged = cam.backgroundColor  == colorTwo;
         isPlaying = audioSource.isPlaying;
         
         var cFrame = Time.frameCount;

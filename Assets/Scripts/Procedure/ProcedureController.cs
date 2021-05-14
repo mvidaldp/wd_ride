@@ -610,7 +610,8 @@ public class ProcedureController : MonoBehaviour
             if ((WestdriveSettings.Progress >= experiment.endTriggerFramePercentage))
             {
                 EventManager.TriggerEvent("stop audio");
-                ChooseModeForStartCoroutine(ADVPaths.Count);
+                StartCoroutine(SaveAndExit());
+                //ChooseModeForStartCoroutine(ADVPaths.Count);
             }
         }
 
