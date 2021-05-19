@@ -3388,6 +3388,7 @@ GameObject:
   - component: {fileID: 1385463907}
   - component: {fileID: 1385463906}
   - component: {fileID: 1385463905}
+  - component: {fileID: 2708990451683390931}
   m_Layer: 8
   m_Name: ADV_linux
   m_TagString: ADV
@@ -3613,6 +3614,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2708990451683390931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385463903}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0725913, y: 1, z: 1.6976805}
+  m_Center: {x: 0.10775761, y: 0, z: 0.34883994}
 --- !u!1 &1405718996
 GameObject:
   m_ObjectHideFlags: 0
@@ -5125,14 +5139,6 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 7518db145359f6748ba804c1a495fd11, type: 2}
-    - target: {fileID: 100080, guid: cd1a971882b013346898e94544e81d3a, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 100018, guid: cd1a971882b013346898e94544e81d3a, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 400074, guid: cd1a971882b013346898e94544e81d3a, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.06953164
@@ -5181,10 +5187,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 100010, guid: cd1a971882b013346898e94544e81d3a, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 100142, guid: cd1a971882b013346898e94544e81d3a, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -5198,10 +5200,6 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100076, guid: cd1a971882b013346898e94544e81d3a, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 100012, guid: cd1a971882b013346898e94544e81d3a, type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
@@ -5225,7 +5223,15 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: cd1a971882b013346898e94544e81d3a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100132, guid: cd1a971882b013346898e94544e81d3a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100080, guid: cd1a971882b013346898e94544e81d3a, type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
@@ -5233,7 +5239,15 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: cd1a971882b013346898e94544e81d3a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 100022, guid: cd1a971882b013346898e94544e81d3a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: cd1a971882b013346898e94544e81d3a, type: 3}
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
@@ -5407,6 +5421,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd1a971882b013346898e94544e81d3a, type: 3}
+--- !u!4 &2360000725487411832 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400010, guid: cd1a971882b013346898e94544e81d3a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2360000725487024370}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2360000725487412192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400146, guid: cd1a971882b013346898e94544e81d3a,
@@ -5416,12 +5436,6 @@ Transform:
 --- !u!1 &2360000725486993344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100146, guid: cd1a971882b013346898e94544e81d3a,
-    type: 3}
-  m_PrefabInstance: {fileID: 2360000725487024370}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2360000725487411832 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400010, guid: cd1a971882b013346898e94544e81d3a,
     type: 3}
   m_PrefabInstance: {fileID: 2360000725487024370}
   m_PrefabAsset: {fileID: 0}
