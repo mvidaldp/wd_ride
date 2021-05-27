@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50bdd484204030043864319210a4f68c, type: 3}
-  m_Name: MS Wissenschaft
+  m_Name: MS Wissenschaft RadioTalk
   m_EditorClassIdentifier: 
   profileName: MS Wissenschaft
   language: DE
@@ -18,8 +18,6 @@ MonoBehaviour:
     type: 3}
   ADVPrefab: {fileID: 1385463903, guid: 0878c477f61b203468990e88e69af142, type: 3}
   ADVModules:
-  - {fileID: 11500000, guid: d80742b88b9f070478ae187a7ad7578e, type: 3}
-  - {fileID: 11500000, guid: f0174588e8413064aabd8ed8164fab4b, type: 3}
   - {fileID: 11500000, guid: 42ae718578b99274e88976b71eedde96, type: 3}
   ADVPaths:
   - Path_ MS Wissenschaft
@@ -63,12 +61,12 @@ MonoBehaviour:
   feedbackOnHalt: 0
   radioTalkEnglish: {fileID: 8300000, guid: 0379bd4c9a235434daf7f985add7be16, type: 3}
   radioTalkGerman: {fileID: 8300000, guid: cf62f3d2c7b1f614b9d47a47991696f3, type: 3}
-  taxiDriverMonolougeEnglish: {fileID: 8300000, guid: a804644a45ed8b848b6402db801403ae,
+  taxiDriverMonolougeEnglish: {fileID: 8300000, guid: 78e54931bef10a94ebcf777e4dbd4c29,
     type: 3}
-  taxiDriverMonolougeGerman: {fileID: 8300000, guid: a804644a45ed8b848b6402db801403ae,
+  taxiDriverMonolougeGerman: {fileID: 8300000, guid: 78e54931bef10a94ebcf777e4dbd4c29,
     type: 3}
-  consetTextEnglish: {fileID: 8300000, guid: 810d8e73ae2bd1343ba97fd3098c4777, type: 3}
-  consetTextGerman: {fileID: 8300000, guid: 810d8e73ae2bd1343ba97fd3098c4777, type: 3}
+  consetTextEnglish: {fileID: 0}
+  consetTextGerman: {fileID: 0}
   randomizeADVPath: 0
   randomizeADVModules: 1
   reuseADVPath: 0
