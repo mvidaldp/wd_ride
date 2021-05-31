@@ -54,7 +54,7 @@ private void Update()
                     hitPositions.centerHitPostion =  centerHit.point;
                     frameData.centerHitPosition = centerHit.point;
                     frameData.centerHitGroup = centerHit.transform.root.name;
-                    Debug.Log("Group: " + frameData.centerHitGroup);
+                    //Debug.Log("Group: " + frameData.centerHitGroup);
                     
                     
                 }
