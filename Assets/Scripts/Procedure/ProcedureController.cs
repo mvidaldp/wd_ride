@@ -140,7 +140,7 @@ public class ProcedureController : MonoBehaviour
     }
     private void Awake()
     {
-        Debug.Log("awaken");
+        // Debug.Log("awaken");
         WestdriveSettings.ResetUID();
         WestdriveSettings.ResetParticipantCode();
         Westdrive.Settings.SetConfigFile("Assets/Resources/Settings/Config.ini");
@@ -554,7 +554,7 @@ public class ProcedureController : MonoBehaviour
         if (!checkIfUserPresent() && !userCheckLock)
         {
             
-            Debug.Log("triggering time out");
+            // Debug.Log("triggering time out");
             EventManager.TriggerEvent("startTimeOut");
         }
 
@@ -562,7 +562,7 @@ public class ProcedureController : MonoBehaviour
 
     public void PresenceTimeOut()
     {
-        Debug.Log("time out triggered, final check in "  + presenceThreshold + "s");
+        // Debug.Log("time out triggered, final check in "  + presenceThreshold + "s");
         userCheckLock = true;
         Invoke(nameof(FinalPresenceCheck),presenceThreshold);
     }
@@ -575,7 +575,7 @@ public class ProcedureController : MonoBehaviour
             
             if(!isEndTriggered)
             {
-                Debug.Log("breaking the experiment");
+                // Debug.Log("breaking the experiment");
                 EventManager.StopListening("startTimeOut",PresenceTimeOut);
                 
                 StartCoroutine(SaveAndExit());
@@ -584,8 +584,8 @@ public class ProcedureController : MonoBehaviour
         }
         else
         {
-            Debug.Log("sensor status:" + checkIfUserPresent());
-            Debug.Log("releasing the lock");
+            // Debug.Log("sensor status:" + checkIfUserPresent());
+            // Debug.Log("releasing the lock");
             userCheckLock = false;
         }
     }

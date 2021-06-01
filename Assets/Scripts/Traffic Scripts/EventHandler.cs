@@ -120,7 +120,7 @@ public class EventHandler : MonoBehaviour {
     //starts the Event and initiates blockades
     private void Event()
     {
-        Debug.Log("Running an Event!");
+        // Debug.Log("Running an Event!");
         if (blockades != null)
         {
             foreach (GameObject blockade in blockades)

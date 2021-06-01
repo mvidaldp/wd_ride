@@ -15,6 +15,14 @@ public class LSLStreams : MonoBehaviour
     public liblsl.StreamOutlet lslOEyeTrackingLocal; // saved in ETRecorder.cs
     public liblsl.StreamInfo lslIHeadTracking;
     public liblsl.StreamOutlet lslOHeadTracking; // saved in ETRecorder.cs
+    public liblsl.StreamInfo lslIHitObjectNames;
+    public liblsl.StreamOutlet lslOHitObjectNames; // saved in ETRecorder.cs
+    public liblsl.StreamInfo lslIHitObjectGroups;
+    public liblsl.StreamOutlet lslOHitObjectGroups; // saved in ETRecorder.cs
+    public liblsl.StreamInfo lslIHitObjectPositions;
+    public liblsl.StreamOutlet lslOHitObjectPositions; // saved in ETRecorder.cs
+    public liblsl.StreamInfo lslIHitPositionOnObjects;
+    public liblsl.StreamOutlet lslOHitPositionOnObjects; // saved in ETRecorder.cs
  
     private void Awake()
     {
@@ -66,6 +74,54 @@ public class LSLStreams : MonoBehaviour
         lslIEyeTrackingWorld.desc().append_child("rightBlink");
         lslIEyeTrackingWorld.desc().append_child("valid");
         lslOEyeTrackingWorld = new liblsl.StreamOutlet(lslIEyeTrackingWorld);
+        // Hit Object Names
+        // saved: max 10 objects that the participant could potentially have looked up 
+        lslIHitObjectNames = new liblsl.StreamInfo(
+            "HitObjectNames",
+            "Markers",
+            30,
+            NominalRate,
+            liblsl.channel_format_t.cf_string,
+            participantUID);
+        lslIHitObjectNames.desc().append_child("HON");
+        lslOHitObjectNames = new liblsl.StreamOutlet(lslIHitObjectNames);
+        // Hit Object Groups 
+        // saved: max 10 object groups that the participant could potentially have looked up 
+        lslIHitObjectGroups = new liblsl.StreamInfo(
+            "HitObjectGroups",
+            "Markers",
+            30,
+            NominalRate,
+            liblsl.channel_format_t.cf_string,
+            participantUID);
+        lslIHitObjectGroups.desc().append_child("HOG");
+        lslOHitObjectGroups = new liblsl.StreamOutlet(lslIHitObjectGroups);
+        // Hit Object Coordinates (in World Coordinates)
+        // saved: 3 coordinates for each object that was potentially looked up (obj1_x, obj1_y, obj1_z, obj2_x, ...)
+        lslIHitObjectPositions = new liblsl.StreamInfo(
+            "HitObjectPositions",
+            "Markers",
+            90,
+            NominalRate,
+            liblsl.channel_format_t.cf_float32,
+            participantUID);
+        lslIHitObjectPositions.desc().append_child("HOPX");
+        lslIHitObjectPositions.desc().append_child("HOPY");
+        lslIHitObjectPositions.desc().append_child("HOPZ");
+        lslOHitObjectPositions = new liblsl.StreamOutlet(lslIHitObjectPositions);
+        // Hit Positions on Objects (in World Coordinates)
+        // saved: 3 coordinates on each object that was potentially looked up (obj1_x, obj1_y, obj1_z, obj2_x, ...)
+        lslIHitPositionOnObjects = new liblsl.StreamInfo(
+            "HitPositionOnObjects",
+            "Markers",
+            90,
+            NominalRate,
+            liblsl.channel_format_t.cf_float32,
+            participantUID);
+        lslIHitPositionOnObjects.desc().append_child("HPOOX");
+        lslIHitPositionOnObjects.desc().append_child("HPOOY");
+        lslIHitPositionOnObjects.desc().append_child("HPOOZ");
+        lslOHitPositionOnObjects = new liblsl.StreamOutlet(lslIHitPositionOnObjects);
         // Local Coordinates
         // saved: origin coordinates (3); direction coordinates (3)
         lslIEyeTrackingLocal = new liblsl.StreamInfo(

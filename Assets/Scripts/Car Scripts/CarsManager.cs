@@ -47,7 +47,7 @@ public class CarsManager : MonoBehaviour {
         XDocument xmlDoc = XDocument.Load("Assets/Resources/Settings/Cars.manifest");
         if (xmlDoc == null)
         {
-            Debug.LogWarning("no manifest file found, procceding normaly !");
+            // Debug.LogWarning("no manifest file found, procceding normaly !");
             return;
         }
         XElement pool = xmlDoc.Element("carpool");
@@ -64,8 +64,8 @@ public class CarsManager : MonoBehaviour {
             poolDensity.Add(float.Parse(densityTag.Value));
             if (debugShowSettingAttributes)
             {
-                Debug.Log("color = " + colorTag.Value);
-                Debug.Log("density = " + densityTag.Value);
+                // Debug.Log("color = " + colorTag.Value);
+                // Debug.Log("density = " + densityTag.Value);
             }
         }
         
@@ -82,18 +82,18 @@ public class CarsManager : MonoBehaviour {
 
             if (spawnPoints.Length != 0)
             {
-                if (debugShowInitializationMessages)
-                    Debug.Log("There are " + spawnPoints.Length + " spawn points registered");
+                // if (debugShowInitializationMessages)
+                    // Debug.Log("There are " + spawnPoints.Length + " spawn points registered");
             }
             else
             {
-                Debug.LogError("No Spawn Point could be found, please create at least one spawn point");
+                // Debug.LogError("No Spawn Point could be found, please create at least one spawn point");
                 yield return null;
             }
         }
         else
         {
-            Debug.LogError("No spawn point could be found at all, Please create spawn points first");
+            // Debug.LogError("No spawn point could be found at all, Please create spawn points first");
             yield return null; 
         }
 
@@ -101,13 +101,13 @@ public class CarsManager : MonoBehaviour {
 
         if (Cars.Count == 0)
         {
-            Debug.LogError("No Character Could be found, Please create at least one object as Character");
+            // Debug.LogError("No Character Could be found, Please create at least one object as Character");
         }
         else
         {
             assetPopulation = spawnPoints.Length;
-            if (debugShowInitializationMessages)
-                Debug.Log("There are " + Cars.Count.ToString() + " cars found");
+            // if (debugShowInitializationMessages)
+            //     Debug.Log("There are " + Cars.Count.ToString() + " cars found");
             characterPool = Cars.Count;
             instantiatedCars = new List<GameObject>();
             GameObject runtimeCarParent = new GameObject("Cars");
@@ -165,31 +165,31 @@ public class CarsManager : MonoBehaviour {
 
             if (spawnPoints.Length != 0)
             {
-                if (debugShowInitializationMessages)
-                    Debug.Log("There are " + spawnPoints.Length + " spawn points registered");
+                // if (debugShowInitializationMessages)
+                //     Debug.Log("There are " + spawnPoints.Length + " spawn points registered");
             }
             else
             {
-                Debug.LogError("No Spawn Point could be found, please create at least one spawn point");
+                // Debug.LogError("No Spawn Point could be found, please create at least one spawn point");
                 yield return null;
             }
         }
         else
         {
-            Debug.LogError("No spawn point could be found at all, Please create spawn points first");
+            // Debug.LogError("No spawn point could be found at all, Please create spawn points first");
             yield return null;
         }
         Cars = new List<GameObject>(assets.Cars);
 
         if (Cars.Count == 0)
         {
-            Debug.LogError("No Character Could be found, Please create at least one object as Character");
+            // Debug.LogError("No Character Could be found, Please create at least one object as Character");
         }
         else
         {
             assetPopulation = spawnPoints.Length;
-            if (debugShowInitializationMessages)
-                Debug.Log("There are " + Cars.Count.ToString() + " cars found");
+            // if (debugShowInitializationMessages)
+            //     Debug.Log("There are " + Cars.Count.ToString() + " cars found");
             characterPool = Cars.Count;
             instantiatedCars = new List<GameObject>();
             GameObject runtimeCarParent = new GameObject("Cars");
@@ -253,31 +253,31 @@ public class CarsManager : MonoBehaviour {
 
             if (spawnPoints.Length != 0)
             {
-                if (debugShowInitializationMessages)
-                    Debug.Log("There are " + spawnPoints.Length + " spawn points registered");
+                // if (debugShowInitializationMessages)
+                //     Debug.Log("There are " + spawnPoints.Length + " spawn points registered");
             }
             else
             {
-                Debug.LogError("No Spawn Point could be found, please create at least one spawn point");
+                // Debug.LogError("No Spawn Point could be found, please create at least one spawn point");
                 yield return null;
             }
         }
         else
         {
-            Debug.LogError("No spawn point could be found at all, Please create spawn points first");
+            // Debug.LogError("No spawn point could be found at all, Please create spawn points first");
             yield return null;
         }
         Cars = new List<GameObject>(assets.Cars);
 
         if (Cars.Count == 0)
         {
-            Debug.LogError("No Character Could be found, Please create at least one object as Character");
+            // Debug.LogError("No Character Could be found, Please create at least one object as Character");
         }
         else
         {
             assetPopulation = spawnPoints.Length;
-            if (debugShowInitializationMessages)
-                Debug.Log("There are " + Cars.Count.ToString() + " cars found");
+            // if (debugShowInitializationMessages)
+            //     Debug.Log("There are " + Cars.Count.ToString() + " cars found");
             characterPool = Cars.Count;
             instantiatedCars = new List<GameObject>();
             GameObject runtimeCarParent = new GameObject("Cars");

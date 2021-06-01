@@ -62,7 +62,7 @@ public class MeshCombinerEditor : EditorWindow
                 MeshRenderer renderer = filter.GetComponent<MeshRenderer>();  // <-- (Easy optimization is possible here, give it a try!)
                 if (renderer == null)
                 {
-                    Debug.LogError(filter.name + " has no MeshRenderer");
+                    // Debug.LogError(filter.name + " has no MeshRenderer");
                     continue;
                 }
 
@@ -99,7 +99,7 @@ public class MeshCombinerEditor : EditorWindow
         Mesh finalMesh = new Mesh();
         finalMesh.CombineMeshes(finalCombiners.ToArray(), false);
         myMeshFilter.sharedMesh = finalMesh;
-        Debug.Log("Final mesh has " + submeshes.Count + " materials.");
+        // Debug.Log("Final mesh has " + submeshes.Count + " materials.");
         for(int index = 0; index < target.transform.childCount; index++)
         {
             target.transform.GetChild(index).gameObject.SetActive(false);

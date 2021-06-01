@@ -95,8 +95,8 @@ public class CarProfileEditor : EditorWindow
             }
             
             GUILayout.EndHorizontal ();
-            if (CarProfiles.profileList == null)
-                Debug.Log("Profile List Empty");
+            // if (CarProfiles.profileList == null)
+            //     Debug.Log("Profile List Empty");
             if (CarProfiles.profileList.Count > 0) 
             {
                 GUILayout.BeginHorizontal();

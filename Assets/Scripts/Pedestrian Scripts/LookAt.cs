@@ -20,7 +20,7 @@ public class LookAt : MonoBehaviour {
         head = gameObject.transform.GetChild(0);
         if (!head)
         {
-            Debug.LogError("No head transform - LookAt disabled");
+            // Debug.LogError("No head transform - LookAt disabled");
             enabled = false;
             return;
         }

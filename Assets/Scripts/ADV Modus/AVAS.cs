@@ -196,17 +196,17 @@ public class AVAS : MonoBehaviour {
     }
     public void ReadFeedBackEnglish()
     {
-        Debug.Log("English feedback Invoked");
+        // Debug.Log("English feedback Invoked");
         voice.Speak(feedbackText, SpeechVoiceSpeakFlags.SVSFlagsAsync);
     }
     public void ReadFeedBackGerman()
     {
-        Debug.Log("German feedback Invoked");
+        // Debug.Log("German feedback Invoked");
         voice.Speak(feedbackText, SpeechVoiceSpeakFlags.SVSFlagsAsync);
     }
     public void ReadText(string message)
     {
-        Debug.Log("TTS Invoked");
+        // Debug.Log("TTS Invoked");
         voice.Speak(message, SpeechVoiceSpeakFlags.SVSFlagsAsync);
     }
     string loadXMLStandalone(string fileName)
@@ -214,10 +214,10 @@ public class AVAS : MonoBehaviour {
 
         string path = Path.Combine("Resources", fileName);
         path = Path.Combine(Application.dataPath, path);
-        Debug.Log("Path:  " + path);
+        // Debug.Log("Path:  " + path);
         StreamReader streamReader = new StreamReader(path);
         string streamString = streamReader.ReadToEnd();
-        Debug.Log("STREAM XML STRING: " + streamString);
+        // Debug.Log("STREAM XML STRING: " + streamString);
         return streamString;
     }
     #elif NOTTS
@@ -241,7 +241,7 @@ public class AVAS : MonoBehaviour {
     }
     public void PlayMessege(AudioClip audioMessege)
     {
-        Debug.Log("audio Invoked");
+        // Debug.Log("audio Invoked");
         AVASAudio = audioMessege;
         StartCoroutine(PlayReaction(0));
     }

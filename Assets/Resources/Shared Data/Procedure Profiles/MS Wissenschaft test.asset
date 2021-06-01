@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50bdd484204030043864319210a4f68c, type: 3}
+  m_Name: MS Wissenschaft test
+  m_EditorClassIdentifier: 
+  profileName: MS Wissenschaft
+  language: DE
+  mainCamera: {fileID: 1432507460423253836, guid: 75cc074df7e73b94b8ddd47c56fea98d,
+    type: 3}
+  ADVPrefab: {fileID: 1385463903, guid: 0878c477f61b203468990e88e69af142, type: 3}
+  ADVModules:
+  - {fileID: 11500000, guid: d80742b88b9f070478ae187a7ad7578e, type: 3}
+  ADVPaths:
+  - Path_ MS Wissenschaft
+  Tracker: {fileID: 11500000, guid: b0711145aaaa1134f85b4da416c16022, type: 3}
+  disabledCarPaths:
+  - key: Path_ MS Wissenschaft
+    value:
+    - Path_ 4 (Car)
+    - Path_ 6 (Car)
+    - Path_ 9 (Car)
+    - Path_ 10 (Car)
+    - Path_ 2 (Car)
+    - Path_ 3 (Car)
+    - Path_ 15 (Car)
+    - Path_ 16 (Car)
+    - Path_ 17 (Car)
+    - Path_ 8 (Car)
+    - Path_ 7 (Car)
+    - Path_ 19 (Car)
+  disabledPedestrianPaths:
+  - key: Path_ MS Wissenschaft
+    value:
+    - Path_ 12 (Pedestrian)
+    - Path_ 13 (Pedestrian)
+    - Path_ 14 (Pedestrian)
+    - Path_ 15 (Pedestrian)
+    - Path_ 18 (Pedestrian)
+    - Path_ 19 (Pedestrian)
+    - Path_ 26 (Pedestrian)
+    - Path_ 27 (Pedestrian)
+    - Path_ 28 (Pedestrian)
+    - Path_ 29 (Pedestrian)
+    - Path_ 30 (Pedestrian)
+    - Path_ 2 (Pedestrian)
+    - Path_ 4 (Pedestrian)
+    - Path_ 9 (Pedestrian)
+    - Path_ 11 (Pedestrian)
+    - Path_ 20 (Pedestrian)
+    - Path_ 25 (Pedestrian)
+  feedbackDelay: 2
+  feedbackOnHalt: 0
+  radioTalkEnglish: {fileID: 8300000, guid: 0379bd4c9a235434daf7f985add7be16, type: 3}
+  radioTalkGerman: {fileID: 8300000, guid: cf62f3d2c7b1f614b9d47a47991696f3, type: 3}
+  taxiDriverMonolougeEnglish: {fileID: 8300000, guid: 78e54931bef10a94ebcf777e4dbd4c29,
+    type: 3}
+  taxiDriverMonolougeGerman: {fileID: 8300000, guid: 78e54931bef10a94ebcf777e4dbd4c29,
+    type: 3}
+  consetTextEnglish: {fileID: 0}
+  consetTextGerman: {fileID: 0}
+  randomizeADVPath: 0
+  randomizeADVModules: 1
+  reuseADVPath: 0
+  usetracking: 0
+  endTriggerOnPath: 0.98
+  endTriggerFramePercentage: 1
+  useOnlineQuestionaire: 0
+  fallbackOnFail: 0
+  openQuestionaireAfterExperiment: 0

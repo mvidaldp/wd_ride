@@ -12,17 +12,17 @@ public class CarRenderer : MonoBehaviour {
     {
         if (car == null)
         {
-            Debug.LogError("carEngine should be set for the script to work correctly");
+            // Debug.LogError("carEngine should be set for the script to work correctly");
         }
     }
     private void OnBecameVisible()
     {
-        Debug.Log("Visible");
+        // Debug.Log("Visible");
         car.Visible = true;
     }
     private void OnBecameInvisible()
     {
-        Debug.Log("invisible");
+        // Debug.Log("invisible");
         car.Visible = false;
     }
 }

@@ -50,7 +50,7 @@ private void Update()
                 if (Physics.Raycast(imaginaryMiddleEye, out centerHit,Mathf.Infinity,1 <<WestdriveSettings.trackableLayerMask))
                 {
                     frameData.centerHit = centerHit.transform.name;
-                    Debug.Log("Object: " + frameData.centerHit);
+                    // Debug.Log("Object: " + frameData.centerHit);
                     hitPositions.centerHitPostion =  centerHit.point;
                     frameData.centerHitPosition = centerHit.point;
                     frameData.centerHitGroup = centerHit.transform.root.name;

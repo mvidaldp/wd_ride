@@ -79,7 +79,7 @@ public class Validation : MonoBehaviour
     // Coroutine for validation (used to have WaitForSeconds) 
     void FixedUpdate()
     {
-        Debug.Log("validation point update");
+        // Debug.Log("validation point update");
         // delay between start of validation and the validation points presentation
         if (!doingValidation && _delay > 0)
         {

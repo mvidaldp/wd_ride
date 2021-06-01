@@ -779,7 +779,7 @@ public class VisualisationGUI : MonoBehaviour
         infoText = "setting up the environment";
         //activates all paths
         string ADVPathName = file.Name.Split('-')[0];
-        Debug.Log(ADVPathName);
+        // Debug.Log(ADVPathName);
         GameObject paths = GameObject.Find("Paths");
         for (int path_index = 0; path_index < paths.transform.childCount; path_index++)
         {
@@ -801,7 +801,7 @@ public class VisualisationGUI : MonoBehaviour
                 events.transform.GetChild(path_index).gameObject.SetActive(false);
         }
 
-        Debug.Log("Disabling car paths");
+        // Debug.Log("Disabling car paths");
         // Disables the Car paths
         foreach (StringListDict dict in experiment.disabledCarPaths)
         {
@@ -814,7 +814,7 @@ public class VisualisationGUI : MonoBehaviour
             }
         }
 
-        Debug.Log("Disabling pedestrian paths");
+        // Debug.Log("Disabling pedestrian paths");
         //Disables the pedestrian paths
         foreach (StringListDict dict in experiment.disabledPedestrianPaths)
         {
@@ -917,7 +917,7 @@ public class VisualisationGUI : MonoBehaviour
         //activates all paths
         string ADVPathName = dataFiles[selectedFileIndex].Name.Split('-')[0];
 
-        Debug.Log(ADVPathName);
+        // Debug.Log(ADVPathName);
         for (int path_index = 0; path_index < GameObject.Find("Paths").transform.childCount; path_index++)
         {
             GameObject.Find("Paths").transform.GetChild(path_index).gameObject.SetActive(true);

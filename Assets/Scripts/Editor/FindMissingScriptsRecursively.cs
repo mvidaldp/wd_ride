@@ -42,7 +42,7 @@ public class FindMissingScriptsRecursively : EditorWindow
                     s = t.parent.name + "/" + s;
                     t = t.parent;
                 }
-                Debug.Log(s + " has an empty script attached in position: " + i, g);
+                // Debug.Log(s + " has an empty script attached in position: " + i, g);
             }
         }
         // Now recurse through each child GO (if there are any):
@@ -62,7 +62,7 @@ public class FindMissingScriptsRecursively : EditorWindow
         {
             deleteInGo(g);
         }
-        Debug.Log(string.Format("Searched {0} GameObjects, {1} components, found {2} missing", go_count, components_count, missing_count));
+        // Debug.Log(string.Format("Searched {0} GameObjects, {1} components, found {2} missing", go_count, components_count, missing_count));
     }
     private void FindInSelected()
     {
@@ -74,7 +74,7 @@ public class FindMissingScriptsRecursively : EditorWindow
         {
             FindInGO(g);
         }
-        Debug.Log(string.Format("Searched {0} GameObjects, {1} components, found {2} missing", go_count, components_count, missing_count));
+        // Debug.Log(string.Format("Searched {0} GameObjects, {1} components, found {2} missing", go_count, components_count, missing_count));
     }
 
     private void FindInGO(GameObject g)
@@ -95,7 +95,7 @@ public class FindMissingScriptsRecursively : EditorWindow
                     s = t.parent.name + "/" + s;
                     t = t.parent;
                 }
-                Debug.Log(s + " has an empty script attached in position: " + i, g);
+                // Debug.Log(s + " has an empty script attached in position: " + i, g);
             }
         }
         // Now recurse through each child GO (if there are any):

@@ -33,14 +33,14 @@ public class TestRandomFunction : MonoBehaviour
         if (iterationIndex <= iterations)
         {
             chooseNextBlock();
-            Debug.Log("proccessed = " + Mathf.FloorToInt((iterationIndex * 100)/iterations) + "%");
+            // Debug.Log("proccessed = " + Mathf.FloorToInt((iterationIndex * 100)/iterations) + "%");
             iterationIndex++;
         }
         else
         {
-            Debug.Log("ADV Module: AVAS = " + ADVModulesStats["AVAS"] + " times in " + iterations);
-            Debug.Log("ADV Module: RadioTalk = " + ADVModulesStats["RadioTalk"] + " times in " + iterations);
-            Debug.Log("ADV Module: Taxi Driver = " + ADVModulesStats["Taxi Driver"] + " times in " + iterations);
+            // Debug.Log("ADV Module: AVAS = " + ADVModulesStats["AVAS"] + " times in " + iterations);
+            // Debug.Log("ADV Module: RadioTalk = " + ADVModulesStats["RadioTalk"] + " times in " + iterations);
+            // Debug.Log("ADV Module: Taxi Driver = " + ADVModulesStats["Taxi Driver"] + " times in " + iterations);
 #if UNITY_EDITOR
             // Application.Quit() does not work in the editor so
             // UnityEditor.EditorApplication.isPlaying need to be set to false to end the game

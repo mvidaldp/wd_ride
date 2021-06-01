@@ -34,10 +34,10 @@ public class CustomBuildEditor : EditorWindow
         {
             experimentProfiles = Experiment.GetComponent<ProcedureController>().experiment;
         }
-        else
-        {
-            Debug.LogError("No Expeiment Manager find, please set the procedure profile manually to continue.");
-        }
+        // else
+        // {
+        //     Debug.LogError("No Expeiment Manager find, please set the procedure profile manually to continue.");
+        // }
     }
 
     private void OnGUI()
