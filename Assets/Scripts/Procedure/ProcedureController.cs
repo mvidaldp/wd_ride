@@ -26,6 +26,7 @@ using Random = UnityEngine.Random;
 /// </summary>
 public class ProcedureController : MonoBehaviour
 {
+    public static ProcedureController Instance { get; private set; } // used to allow easy access of this script in other scripts
     [Space, Header("Cameras")] public GameObject monoCamera;
     public GameObject stereoCamera;
     [Space, Header("Components")] public GameObject camera;
@@ -272,6 +273,17 @@ public class ProcedureController : MonoBehaviour
         camera.transform.position = cameraStand.position;
         camera.transform.rotation = cameraStand.rotation;
         camera.transform.parent = cameraStand;
+
+        // TODO -------------
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     //Enables the first block upon start and initiates the chooseNextBlock method

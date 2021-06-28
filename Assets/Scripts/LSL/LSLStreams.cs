@@ -4,17 +4,29 @@ using LSL;
 public class LSLStreams : MonoBehaviour
 {
     public static LSLStreams Instance { get; private set; } // used to allow easy access of this script in other scripts
-    private string participantUID; 
+    private string participantUID;
+
     private const double NominalRate = liblsl.IRREGULAR_RATE; // irregular sampling rate
+
     // variables to save date to LSL
-    public liblsl.StreamInfo lslIValidationError; 
-    public liblsl.StreamOutlet lslOValidationError; // saved in Validation.cs
+    public liblsl.StreamInfo lslICondition;
+    public liblsl.StreamOutlet lslOCondition; // empty Stream, saved here
+    public liblsl.StreamInfo lslIFrameTracking;
+    public liblsl.StreamOutlet lslOFrameTracking; // saved in ETRecorder.cs
     public liblsl.StreamInfo lslIEyeTrackingWorld;
     public liblsl.StreamOutlet lslOEyeTrackingWorld; // saved in ETRecorder.cs
     public liblsl.StreamInfo lslIEyeTrackingLocal;
     public liblsl.StreamOutlet lslOEyeTrackingLocal; // saved in ETRecorder.cs
     public liblsl.StreamInfo lslIHeadTracking;
     public liblsl.StreamOutlet lslOHeadTracking; // saved in ETRecorder.cs
+    public liblsl.StreamInfo lslIHeadTrackingObjectNames;
+    public liblsl.StreamOutlet lslOHeadTrackingObjectNames; // saved in ETRecorder.cs
+    public liblsl.StreamInfo lslIHeadTrackingObjectGroups;
+    public liblsl.StreamOutlet lslOHeadTrackingObjectGroups; // saved in ETRecorder.cs
+    public liblsl.StreamInfo lslIHeadTrackingObjectPositions;
+    public liblsl.StreamOutlet lslOHeadTrackingObjectPositions; // saved in ETRecorder.cs
+    public liblsl.StreamInfo lslIHeadTrackingPositionOnObjects;
+    public liblsl.StreamOutlet lslOHeadTrackingPositionOnObjects; // saved in ETRecorder.cs
     public liblsl.StreamInfo lslIHitObjectNames;
     public liblsl.StreamOutlet lslOHitObjectNames; // saved in ETRecorder.cs
     public liblsl.StreamInfo lslIHitObjectGroups;
@@ -23,7 +35,7 @@ public class LSLStreams : MonoBehaviour
     public liblsl.StreamOutlet lslOHitObjectPositions; // saved in ETRecorder.cs
     public liblsl.StreamInfo lslIHitPositionOnObjects;
     public liblsl.StreamOutlet lslOHitPositionOnObjects; // saved in ETRecorder.cs
- 
+
     private void Awake()
     {
         // TODO -------------
@@ -40,20 +52,29 @@ public class LSLStreams : MonoBehaviour
 
     void Start()
     {
-       // Validation Error
+        // Validation Error
         // saved: 3 coordinates of the error
         participantUID = WestdriveSettings.ParticipantUID;
-        lslIValidationError = new liblsl.StreamInfo(
-            "ValidationError",
+        // lslICondition = new liblsl.StreamInfo(
+        //     "TaskInfo",
+        //     "Markers",
+        //     1,
+        //     NominalRate,
+        //     liblsl.channel_format_t.cf_string,
+        //     participantUID);
+        // string condition = ProcedureController.Instance.experiment.ADVModules[0].ToString();
+        // Debug.Log("Condition: " + condition);
+        // lslICondition.desc().append_child(condition);
+        // lslOCondition = new liblsl.StreamOutlet(lslICondition);
+        lslIFrameTracking = new liblsl.StreamInfo(
+            "FrameTracking",
             "Markers",
-            3,
+            1,
             NominalRate,
-            liblsl.channel_format_t.cf_float32,
+            liblsl.channel_format_t.cf_int32,
             participantUID);
-        lslIValidationError.desc().append_child("ValX");
-        lslIValidationError.desc().append_child("ValY");
-        lslIValidationError.desc().append_child("ValZ");
-        lslOValidationError = new liblsl.StreamOutlet(lslIValidationError);
+        lslIFrameTracking.desc().append_child("CurrentFrame");
+        lslOFrameTracking = new liblsl.StreamOutlet(lslIFrameTracking);
         // World Coordinates
         // saved: Tobii timestamps (1); origin coordinates (3); direction coordinates (3), Left & right eye blinks (2), Check if ray is valid (1)
         lslIEyeTrackingWorld = new liblsl.StreamInfo(
@@ -155,5 +176,53 @@ public class LSLStreams : MonoBehaviour
         lslIHeadTracking.desc().append_child("HTdirectionY");
         lslIHeadTracking.desc().append_child("HTdirectionZ");
         lslOHeadTracking = new liblsl.StreamOutlet(lslIHeadTracking);
+        // Hit Object Names (Head Tracking, nose vector)
+        // saved: max 10 objects that the participant could potentially have looked up 
+        lslIHeadTrackingObjectNames = new liblsl.StreamInfo(
+            "HeadTrackingObjectNames",
+            "Markers",
+            30,
+            NominalRate,
+            liblsl.channel_format_t.cf_string,
+            participantUID);
+        lslIHeadTrackingObjectNames.desc().append_child("HTON");
+        lslOHeadTrackingObjectNames = new liblsl.StreamOutlet(lslIHeadTrackingObjectNames);
+        // Hit Object Groups (Head Tracking, nose vector)
+        // saved: max 10 object groups that the participant could potentially have looked up 
+        lslIHeadTrackingObjectGroups = new liblsl.StreamInfo(
+            "HeadTrackingObjectGroups",
+            "Markers",
+            30,
+            NominalRate,
+            liblsl.channel_format_t.cf_string,
+            participantUID);
+        lslIHeadTrackingObjectGroups.desc().append_child("HTOG");
+        lslOHeadTrackingObjectGroups = new liblsl.StreamOutlet(lslIHeadTrackingObjectGroups);
+        // Hit Object Coordinates (in World Coordinates) (Head Tracking, nose vector)
+        // saved: 3 coordinates for each object that was potentially looked up (obj1_x, obj1_y, obj1_z, obj2_x, ...)
+        lslIHeadTrackingObjectPositions = new liblsl.StreamInfo(
+            "HeadTrackingObjectPositions",
+            "Markers",
+            90,
+            NominalRate,
+            liblsl.channel_format_t.cf_float32,
+            participantUID);
+        lslIHeadTrackingObjectPositions.desc().append_child("HTOPX");
+        lslIHeadTrackingObjectPositions.desc().append_child("HTOPY");
+        lslIHeadTrackingObjectPositions.desc().append_child("HTOPZ");
+        lslOHeadTrackingObjectPositions = new liblsl.StreamOutlet(lslIHeadTrackingObjectPositions);
+        // Hit Positions on Objects (in World Coordinates) (Head Tracking, nose vector)
+        // saved: 3 coordinates on each object that was potentially looked up (obj1_x, obj1_y, obj1_z, obj2_x, ...)
+        lslIHeadTrackingPositionOnObjects = new liblsl.StreamInfo(
+            "HeadTrackingPositionOnObjects",
+            "Markers",
+            90,
+            NominalRate,
+            liblsl.channel_format_t.cf_float32,
+            participantUID);
+        lslIHeadTrackingPositionOnObjects.desc().append_child("HTPOOX");
+        lslIHeadTrackingPositionOnObjects.desc().append_child("HTPOOY");
+        lslIHeadTrackingPositionOnObjects.desc().append_child("HTPOOZ");
+        lslOHeadTrackingPositionOnObjects = new liblsl.StreamOutlet(lslIHeadTrackingPositionOnObjects);
     }
 }

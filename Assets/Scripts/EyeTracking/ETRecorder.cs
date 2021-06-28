@@ -10,7 +10,9 @@ public class ETRecorder : MonoBehaviour
     private Vector3 noseVector; // used to save head-tracking data
     private TobiiXR_EyeTrackingData _eyeTrackingWorld;
     private TobiiXR_EyeTrackingData _eyeTrackingLocal;
+
     private float rayVal;
+
     // private variables 
     private TobiiXR_Settings settings;
 
@@ -37,9 +39,18 @@ public class ETRecorder : MonoBehaviour
     void SaveHitObjects(string[] objectNames, string[] objectGroups, float[] objectPositions, float[] positionOnObject)
     {
         LSLStreams.Instance.lslOHitObjectNames.push_sample(objectNames);
-        LSLStreams.Instance.lslOHitObjectNames.push_sample(objectGroups);
+        LSLStreams.Instance.lslOHitObjectGroups.push_sample(objectGroups);
         LSLStreams.Instance.lslOHitObjectPositions.push_sample(objectPositions);
         LSLStreams.Instance.lslOHitPositionOnObjects.push_sample(positionOnObject);
+    }
+
+    void SaveHeadTrackingObjects(string[] objectNames, string[] objectGroups, float[] objectPositions,
+        float[] positionOnObject)
+    {
+        LSLStreams.Instance.lslOHeadTrackingObjectNames.push_sample(objectNames);
+        LSLStreams.Instance.lslOHeadTrackingObjectGroups.push_sample(objectGroups);
+        LSLStreams.Instance.lslOHeadTrackingObjectPositions.push_sample(objectPositions);
+        LSLStreams.Instance.lslOHeadTrackingPositionOnObjects.push_sample(positionOnObject);
     }
 
     void SaveEyeTrackingLocal(float[] eyeTrackingValues)
@@ -70,7 +81,6 @@ public class ETRecorder : MonoBehaviour
             hitPositionOnObject.Add(colliderhit.point.y);
             hitPositionOnObject.Add(colliderhit.point.z);
         }
-
         // we created lists of 30 objects to be pushed to LSL, so we have to create lists of 30 objects 
         // therefore we fill up the rest of the list with placeholders ("empty"; 0)
         for (int i = hitObjectNames.Count; i < 30; i++) hitObjectNames.Add("Empty");
@@ -89,6 +99,55 @@ public class ETRecorder : MonoBehaviour
         //Debug.Log(hitObjectNames[0]);
         // call the function to push the samples to LSL
         SaveHitObjects(names, groups, positions, positionOnObject);
+    }
+
+    private void GetHitObjectsFromNoseVector(Vector3 gazeOrigin, Vector3 gazeDirection)
+    {
+        AnalyzableData frameData = new AnalyzableData();
+        HitPositionType hitPositions = new HitPositionType();
+        frameData.trackerPosition = transform.position;
+        frameData.trackerRotation = transform.rotation;
+        hitPositions.cameraPosition = transform.position;
+        hitPositions.cameraRotation = transform.rotation;
+
+        // Debug.DrawRay(imaginaryMiddleEye.origin, imaginaryMiddleEye.direction * 1000, Color.red);
+        RaycastHit[] headTrackingColliders = Physics.RaycastAll(gazeOrigin, gazeDirection, 250.0f);
+        // lists to save information of hit objects
+        List<string> headTrackingObjectNames = new List<string>();
+        List<string> headTrackingObjectGroups = new List<string>();
+        List<float> headTrackingObjectPositions = new List<float>();
+        List<float> headTrackingPositionOnObject = new List<float>();
+
+        // you calculate to collider hit and add the object that was hit (name, position, where on the object it was hit)
+        foreach (var colliderhit in headTrackingColliders)
+        {
+            headTrackingObjectNames.Add(colliderhit.collider.gameObject.name);
+            headTrackingObjectGroups.Add(colliderhit.collider.transform.root.name);
+            headTrackingObjectPositions.Add(colliderhit.collider.transform.position.x);
+            headTrackingObjectPositions.Add(colliderhit.collider.transform.position.y);
+            headTrackingObjectPositions.Add(colliderhit.collider.transform.position.z);
+            headTrackingPositionOnObject.Add(colliderhit.point.x);
+            headTrackingPositionOnObject.Add(colliderhit.point.y);
+            headTrackingPositionOnObject.Add(colliderhit.point.z);
+        }
+
+        // we created lists of 30 objects to be pushed to LSL, so we have to create lists of 30 objects 
+        // therefore we fill up the rest of the list with placeholders ("empty"; 0)
+        for (int i = headTrackingObjectNames.Count; i < 30; i++) headTrackingObjectNames.Add("Empty");
+        for (int i = headTrackingObjectGroups.Count; i < 30; i++) headTrackingObjectGroups.Add("Empty");
+        for (int i = headTrackingObjectPositions.Count; i < 90; i++)
+        {
+            headTrackingObjectPositions.Add(0);
+            headTrackingPositionOnObject.Add(0);
+        }
+
+        // transform the lists to arrays so we can push them to LSL (LSL does not accept lists)
+        string[] names = headTrackingObjectNames.GetRange(0, 30).ToArray();
+        string[] groups = headTrackingObjectGroups.GetRange(0, 30).ToArray();
+        float[] positions = headTrackingObjectPositions.GetRange(0, 90).ToArray();
+        float[] positionOnObject = headTrackingPositionOnObject.GetRange(0, 90).ToArray();
+        // call the function to push the samples to LSL
+        SaveHeadTrackingObjects(names, groups, positions, positionOnObject);
     }
 
     void FixedUpdate()
@@ -150,5 +209,10 @@ public class ETRecorder : MonoBehaviour
         };
         // call function to push head-tracking data to LSL
         SaveHeadTracker(headTracker);
+        // raycast headtracking (nose vector) and then push it to LSL
+        GetHitObjectsFromNoseVector(headPosition, noseVector);
+        // save current frame via LSL
+        int[] currentFrame = {Time.frameCount};
+        LSLStreams.Instance.lslOFrameTracking.push_sample(currentFrame);
     }
 }
