@@ -10,7 +10,9 @@ using System.Threading.Tasks;
 /// </summary>
 public class HeadTracker :GenericTracker
 {
-  
+    public GameObject player; // to access the player
+    private Vector3 headPosition; // used to save head-tracking data
+    private Vector3 noseVector; // used to save head-tracking data
 
     //private PositionRotationType dataPoint;
     
@@ -25,6 +27,8 @@ public class HeadTracker :GenericTracker
     
     private void Update()
     {
+        headPosition = player.transform.position;
+        noseVector = player.transform.forward;
         if (isTracking)
         {
             PositionRotationType dataPoint = new PositionRotationType();
@@ -40,7 +44,7 @@ public class HeadTracker :GenericTracker
         {
             if (currentFrame <= lastFrame)
             {
-                
+                RaycastHit[] headTrackingColliders = Physics.RaycastAll(headPosition, noseVector, 250.0f);
                 AnalyzableData frameData = new AnalyzableData();
                 HitPositionType hitPositions = new HitPositionType();
                 frameData.frameNumber = currentFrame;
@@ -54,6 +58,25 @@ public class HeadTracker :GenericTracker
                     GetComponent<Camera>().ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
                 RaycastHit centerHit;
                 Debug.DrawRay(imaginaryMiddleEye.origin, imaginaryMiddleEye.direction * 1000, Color.red);
+                
+                // lists to save information of hit objects
+                List<string> headTrackingObjectNames = new List<string>();
+                List<string> headTrackingObjectGroups = new List<string>();
+                List<float> headTrackingObjectPositions = new List<float>();
+                List<float> headTrackingPositionOnObject = new List<float>();
+
+                // you calculate to collider hit and add the object that was hit (name, position, where on the object it was hit)
+                foreach (var colliderhit in headTrackingColliders)
+                {
+                    headTrackingObjectNames.Add(colliderhit.collider.gameObject.name);
+                    headTrackingObjectGroups.Add(colliderhit.collider.transform.root.name);
+                    headTrackingObjectPositions.Add(colliderhit.collider.transform.position.x);
+                    headTrackingObjectPositions.Add(colliderhit.collider.transform.position.y);
+                    headTrackingObjectPositions.Add(colliderhit.collider.transform.position.z);
+                    headTrackingPositionOnObject.Add(colliderhit.point.x);
+                    headTrackingPositionOnObject.Add(colliderhit.point.y);
+                    headTrackingPositionOnObject.Add(colliderhit.point.z);
+                }
                 
                 if (Physics.Raycast(imaginaryMiddleEye, out centerHit,Mathf.Infinity,1 <<WestdriveSettings.trackableLayerMask))
                 {
