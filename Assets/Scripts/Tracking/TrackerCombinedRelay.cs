@@ -44,7 +44,7 @@ public class TrackerCombinedRelay : MonoBehaviour
                         renderer.material.SetColor("_Color", Color.green);
 
                     }
-
+                    /*
                     if (hitPoint.boxHitPostion != Vector3.zero)
                     {
                         GameObject boxHit = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -55,6 +55,7 @@ public class TrackerCombinedRelay : MonoBehaviour
                         renderer.material = new Material(baseMaterial);
                         renderer.material.SetColor("_Color", Color.yellow);
                     }
+                    */
                 }
 
                 TimeGaurd.setCurrentFrame(currentFrame);

@@ -740,6 +740,7 @@ public class VisualisationGUI : MonoBehaviour
                         carsManager.ResetSystemAsync();
                         pedestrianManager.ResetSystemAsync();
                         Destroy(GameObject.FindGameObjectWithTag("ADV"));
+                        Destroy(GameObject.Find("ADV_linux(Clone)"));
 
                         this.gameObject.GetComponent<GenericTracker>().stopRayCasting();
                         Westdrive.Serialization.CsvTools.SaveObjects(WestdriveSettings.processedData,
@@ -761,7 +762,7 @@ public class VisualisationGUI : MonoBehaviour
                         infoText = ((TimeGaurd.getCurrentFrame() * 100) / lastFrame).ToString() + "% of processing <" +
                                    file.Name + "> is done.";
                     }
-
+                    StopCoroutine("processFile");
                     yield return null;
                 }
 
@@ -809,7 +810,8 @@ public class VisualisationGUI : MonoBehaviour
             {
                 foreach (string pathName in dict.value)
                 {
-                    GameObject.Find(pathName).SetActive(false);
+                    if(GameObject.Find(pathName) != null)
+                        GameObject.Find(pathName).SetActive(false);
                 }
             }
         }
@@ -822,7 +824,9 @@ public class VisualisationGUI : MonoBehaviour
             {
                 foreach (string pathName in dict.value)
                 {
-                    GameObject.Find(pathName).SetActive(false);
+                    
+                    if(GameObject.Find(pathName) != null)
+                        GameObject.Find(pathName).SetActive(false);
                 }
             }
         }
@@ -945,7 +949,8 @@ public class VisualisationGUI : MonoBehaviour
             {
                 foreach (string pathName in dict.value)
                 {
-                    GameObject.Find(pathName).SetActive(false);
+                    if(GameObject.Find(pathName) != null)
+                        GameObject.Find(pathName).SetActive(false);
                 }
             }
         }
@@ -958,7 +963,8 @@ public class VisualisationGUI : MonoBehaviour
             {
                 foreach (string pathName in dict.value)
                 {
-                    GameObject.Find(pathName).SetActive(false);
+                    if(GameObject.Find(pathName) != null)
+                        GameObject.Find(pathName).SetActive(false);
                 }
             }
         }

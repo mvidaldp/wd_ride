@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using ProtoBuf;
@@ -9,17 +10,17 @@ using ProtoBuf;
 public class HitPositionType {
     [ProtoMember(1,Name = "centerHitPostion")]
     public PBVector3 centerHitPostion { get; set; }
-    [ProtoMember(2,Name = "boxHitPostion")]
-    public PBVector3 boxHitPostion { get; set; }
-    [ProtoMember(3,Name = "cameraPosition")]
+    //[ProtoMember(2,Name = "boxHitPostion")]
+    //public PBVector3 boxHitPostion { get; set; }
+    [ProtoMember(2,Name = "cameraPosition")]
     public PBVector3 cameraPosition { get; set; }
-    [ProtoMember(4,Name = "cameraRotation")]
+    [ProtoMember(3,Name = "cameraRotation")]
     public PBQuaternion cameraRotation { get; set; }
 
     public HitPositionType()
     {
         this.centerHitPostion = new Vector3();
-        this.boxHitPostion = new Vector3();
+        //this.boxHitPostion = new Vector3();
         this.cameraPosition = new Vector3();
         this.cameraRotation = new Quaternion();
     }

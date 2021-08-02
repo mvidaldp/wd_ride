@@ -29,9 +29,10 @@ public class TrackerReplay : MonoBehaviour
         {
             if (currentFrame <= lastFrame)
             {
- 
+            
                 transform.position = recordedData.Data[currentFrame].cameraPosition;
                 transform.rotation = recordedData.Data[currentFrame].cameraRotation;
+
                 if (recordedData.Data[currentFrame].centerHitPostion != Vector3.zero)
                 {
                     GameObject centerHit = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -44,7 +45,7 @@ public class TrackerReplay : MonoBehaviour
                     renderer.material.SetColor("_Color",Color.green);
                     
                 }
-
+                /*
                 if (recordedData.Data[currentFrame].boxHitPostion != Vector3.zero)
                 {
                     GameObject boxHit = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -55,7 +56,7 @@ public class TrackerReplay : MonoBehaviour
                     renderer.material = new Material(baseMaterial);
                     renderer.material.SetColor("_Color",Color.yellow);
                 }
-
+                */
                 TimeGaurd.setCurrentFrame(currentFrame);
                 currentFrame++;
             }

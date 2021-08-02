@@ -40,6 +40,9 @@ public class TrafficLightController : MonoBehaviour {
     private void Awake()
     {
         traffic_light_renderer = gameObject.GetComponent<Renderer>();
+        traffic_light_renderer.transform.GetComponent<Renderer>().materials[4].SetColor("_EmissionColor", Color.black);
+        traffic_light_renderer.transform.GetComponent<Renderer>().materials[2].SetColor("_EmissionColor", Color.green);
+        traffic_light_renderer.transform.GetComponent<Renderer>().materials[3].SetColor("_EmissionColor", Color.black);
 
         lightsource_red1 = transform.Find("LightRed1").GetComponent<Light>();
         lightsource_yellow1 = transform.Find("LightYellow1").GetComponent<Light>();
@@ -95,7 +98,7 @@ public class TrafficLightController : MonoBehaviour {
         }
     }
     void Start () {
-		
+        
 	}
 	
 	// Update is called once per frame
