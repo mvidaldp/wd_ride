@@ -58,7 +58,8 @@ public class HeadTracker : GenericTracker
                 frameData.noseVector = noseVector;
                 hitPositions.cameraPosition = transform.position;
                 hitPositions.cameraRotation = transform.rotation;
-                RaycastHit[] headTrackingColliders = Physics.RaycastAll(headPosition, noseVector, 250.0f);
+                RaycastHit[] htResults = new RaycastHit[100];
+                var hits = Physics.RaycastNonAlloc(headPosition, noseVector, htResults, 2200.0f);
                 // lists to save information of hit objects
                 List<string> headTrackingObjectNames = new List<string>();
                 List<string> headTrackingObjectGroups = new List<string>();
@@ -68,10 +69,11 @@ public class HeadTracker : GenericTracker
                 //     GetComponent<Camera>().ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
                 // RaycastHit centerHit;
                 // Debug.DrawRay(imaginaryMiddleEye.origin, imaginaryMiddleEye.direction * 1000, Color.red);
-                if (headTrackingColliders.Length > 0) {
+                if (hits > 0) {
                     // you calculate to collider hit and add the object that was hit (name, position, where on the object it was hit)
-                    foreach (var colliderhit in headTrackingColliders)
-                    {
+                    for (int i = 0; i < hits; i++)
+                    { 
+                        RaycastHit colliderhit = htResults[i];
                         headTrackingObjectNames.Add(colliderhit.collider.gameObject.name);
                         headTrackingObjectGroups.Add(colliderhit.collider.transform.root.name);
                         string hToP = "(" + colliderhit.collider.transform.position.x + ", " +
@@ -86,7 +88,7 @@ public class HeadTracker : GenericTracker
                     frameData.hitObjectNames = string.Join(", ", headTrackingObjectNames);
                     frameData.hitObjectPositions = string.Join(", ", headTrackingObjectPositions);
                     frameData.hitPositionOnObjects = string.Join(", ", headTrackingPositionOnObjects);
-                    hitPositions.centerHitPostion = headTrackingColliders[0].point;  // to ensure it doesn't break
+                    hitPositions.centerHitPostion = htResults[0].point;  // to ensure it doesn't break
                     frameData.hitObjectGroups = string.Join(", ", headTrackingObjectGroups);
                 } else {
                     frameData.hitObjectNames = "null";
