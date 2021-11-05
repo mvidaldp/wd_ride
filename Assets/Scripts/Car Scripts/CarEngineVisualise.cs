@@ -159,10 +159,10 @@ public class CarEngineVisualise : MonoBehaviour
                 int currentFrame = TimeGaurd.getCurrentFrame();
                 if (currentFrame > lastFrame)
                 {
-                    Destroy(this.gameObject);
+                    this.gameObject.SetActive(false);
                     if (this.CompareTag("Event Object"))
                     {
-                        Destroy(this.transform.parent.gameObject);
+                        this.transform.parent.gameObject.SetActive(false);
                     }
                 }
                 else if (dataPoints.ContainsKey(currentFrame))

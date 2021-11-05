@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -40,14 +41,17 @@ public class CharacterManagerVisualise : MonoBehaviour
             int currentFrame = TimeGaurd.getCurrentFrame();
             if (currentFrame > lastFrame)
             {
-                Destroy(this);
+                this.gameObject.SetActive(false);
                 if (this.CompareTag("Event Object"))
                 {
-                    Destroy(this.transform.parent.gameObject);
+                    this.transform.parent.gameObject.SetActive(false);
                 }
             }
             else if (dataPoints.ContainsKey(currentFrame))
             {
+                body.position = dataPoints[currentFrame].position;
+                body.rotation = dataPoints[currentFrame].rotaion;
+                /*
                 if (WestdriveSettings.useInterpolate == true)
                 {
                     Vector3 positionToBe = dataPoints[currentFrame].position;
@@ -64,11 +68,85 @@ public class CharacterManagerVisualise : MonoBehaviour
                     body.position = dataPoints[currentFrame].position;
                     body.rotation = dataPoints[currentFrame].rotaion;
                 }
+                */
             }
             
         }
     }
-   // initializes the Rigidbody components
+
+    private void OnEnable()
+    {
+        _initializeExtra();
+    }
+    
+    private void _initializeExtra()
+    {
+        anim = GetComponent<Animator>();
+        if (this.CompareTag("Event Object"))
+        {
+            switch (this.transform.parent.gameObject.name)
+            {
+                case "Event1.1":
+                    anim.SetInteger("Condition", 1);
+                    break;
+                case "Event2.1":
+                    anim.SetInteger("Condition", 1);
+                    break;
+                case "Event2.2":
+                    anim.SetInteger("Condition", 2);
+                    break;
+                case "Event3.1":
+                    anim.SetInteger("Condition", 3);
+                    break;
+                case "Event3.2":
+                    anim.SetInteger("Condition", 4);
+                    break;
+                case "Event3.4":
+                    anim.SetInteger("Condition", 1);
+                    break;
+                case "Event4.1 (MSW)":
+                    anim.SetInteger("Condition", 1);
+                    break;
+                case "Event4.3 (MSW)":
+                    anim.SetInteger("Condition", 3);
+                    break;
+                default:
+
+                    break;
+            }
+            anim.enabled = true;
+            if( WestdriveSettings.EventData.Data.ContainsKey(this.transform.parent.gameObject.name))
+                dataPoints = WestdriveSettings.EventData.Data[this.transform.parent.gameObject.name];
+            else
+            {
+                Destroy(this.gameObject);
+                Destroy(this.transform.parent.gameObject);
+            }
+        }
+        else
+        {
+            anim.SetBool("move", true);
+            anim.enabled = true;
+        }
+        /*firstFrame = dataPoints.Keys.First();
+        lastFrame = dataPoints.Keys.Last();*/
+        if (this.gameObject.GetComponent<Rigidbody>() != null)
+        {
+            body = this.gameObject.GetComponent<Rigidbody>();
+        }
+        else
+        {
+            this.gameObject.AddComponent<Rigidbody>();
+            body = this.gameObject.GetComponent<Rigidbody>();
+            body.useGravity = false;
+            body.isKinematic = true;
+            body.interpolation = RigidbodyInterpolation.Interpolate;
+        }
+        /*transform.position = dataPoints[firstFrame].position;
+        transform.rotation = dataPoints[firstFrame].rotaion;*/
+    }
+
+    // initializes the Rigidbody components
     private void _initialize()
     {
         if (this.CompareTag("Event Object"))

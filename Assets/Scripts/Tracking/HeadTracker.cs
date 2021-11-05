@@ -59,7 +59,7 @@ public class HeadTracker : GenericTracker
                 hitPositions.cameraPosition = transform.position;
                 hitPositions.cameraRotation = transform.rotation;
                 RaycastHit[] htResults = new RaycastHit[100];
-                var hits = Physics.RaycastNonAlloc(headPosition, noseVector, htResults, 2200.0f);
+                var hits = Physics.RaycastNonAlloc(recordedData.Data[currentFrame].position, (Quaternion) recordedData.Data[currentFrame].rotaion * Vector3.forward, htResults, 2200.0f);
                 // lists to save information of hit objects
                 List<string> headTrackingObjectNames = new List<string>();
                 List<string> headTrackingObjectGroups = new List<string>();
