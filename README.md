@@ -1,6 +1,6 @@
 # wd_tam_ride
 
-Modification of [Projects Westdrive's original "AVAS" VR city ride](https://gitlab.com/fnnezami/project-westdrive/-/tree/MS-Wissenschaft?ref_type=heads) to [assess self-driving car acceptance using VR by Farbod Nosrat Nezami and Maximilian A. Wächter](https://ieeexplore.ieee.org/document/9781604).
+Modification of [Project Westdrive's original "AVAS" VR city ride](https://gitlab.com/fnnezami/project-westdrive/-/tree/MS-Wissenschaft?ref_type=heads) to [assess self-driving car acceptance using VR by Farbod Nosrat Nezami and Maximilian A. Wächter](https://ieeexplore.ieee.org/document/9781604).
 This optimized modification allows simultaneous recording of head-tracking, eye-tracking, and EEG data while performing the experimental task.
 
 This modification would not have been possible without the help of my colleague [Debora Nolte](https://github.com/debnolte).
