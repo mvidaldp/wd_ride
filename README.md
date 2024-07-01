@@ -1,7 +1,7 @@
-# wd_tam_ride
+# Westdrive TAM ride
 
 Modification of [Project Westdrive's original "AVAS" VR city ride](https://gitlab.com/fnnezami/project-westdrive/-/tree/MS-Wissenschaft?ref_type=heads) to [assess self-driving car acceptance using VR by Farbod Nosrat Nezami and Maximilian A. Wächter](https://ieeexplore.ieee.org/document/9781604).
-This optimized modification allows simultaneous recording of head-tracking and eye-tracking (using the HTC Vive Pro HMD), and EEG data while performing the experimental task. This simultaneous recording of data is achieved using [LSL (LabStreamingLayer)](https://github.com/sccn/liblsl).
+This optimized modification allows simultaneous recording of head-tracking and eye-tracking ([using the HTC Vive Pro HMD](https://en.wikipedia.org/wiki/HTC_Vive)), and EEG data while performing the experimental task. This simultaneous recording of data is achieved using [LSL (LabStreamingLayer)](https://github.com/sccn/liblsl).
 
 All this work would not have been possible without the help of my colleague [Debora Nolte](https://github.com/debnolte).
 
