@@ -40,6 +40,7 @@ and [Westdrive Core](https://gitlab.com/farbod69/westdrive-core) here : https://
 Project Westdrive has been developed and tested on the following hardwares:
 
 System 1:
+
 ![CPU](https://img.shields.io/badge/CPU%3A-CPU--Intel%20Xeon%20W--2133%20%40%203.60%20GHz-green.svg)
 ![RAM](https://img.shields.io/badge/RAM%3A-16%2C0%20GB-green.svg)
 ![Graphics Card](https://img.shields.io/badge/GPU%3A-Nvidia%20Geforce%20RTX%202080%20Ti-green.svg)
@@ -48,6 +49,7 @@ System 1:
 
 ---
 System 2:
+
 ![CPU](https://img.shields.io/badge/CPU-Intel%20Xeon%20E5--1607%20v4%20%40%203.10GHz-green.svg)
 ![RAM](https://img.shields.io/badge/RAM%3A-32%2C0%20GB-green.svg)
 ![Graphics Card](https://img.shields.io/badge/GPU%3A-Nvidia%20Geforce%20GTX%201080%20Ti-green.svg)
